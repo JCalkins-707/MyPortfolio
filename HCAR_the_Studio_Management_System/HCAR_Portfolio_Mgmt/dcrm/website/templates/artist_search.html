@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body>
+
+   <h1>Artist Search</h1>
+    <form method="get" >
+            <label for="artist_fname">First Name:</label>
+            <input type="text" id="artist_fname" name="artist_fname" value="{{ request.GET.artist_fname|default:'' }}" />
+            <br /> <br />
+            <label for="artist_lname">Last Name:</label>
+            <input type="text" id="artist_lname" name="artist_lname" value="{{ request.GET.artist_lname|default:'' }}" />
+            <br />
+        <button class="btn btn-primary" type="submit" >Search</button>
+    </form>
+
+    {% if artists %}
+        <h2>Results:</h2>
+        <ul>
+            {% for artist in artists %}
+                <li>{{ artist.artist_fname }} {{ artist.artist_lname }}</li>
+            {% endfor %}
+        </ul>
+    {% elif form.is_bound %}
+        <p>No artists found.</p>
+    {% endif %}
+
+</body>
+
+{% endblock %}

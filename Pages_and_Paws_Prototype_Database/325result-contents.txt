@@ -1,0 +1,1289 @@
+===== shelter =====
+
+ID   Name                          Street Addr.             City          Zip   
+---- ----------------------------- ------------------------ ------------- ----- 
+1001 San Francisco SPCA            201 Alabama St           San Francisco 94103 
+1002 Give Me Shelter Cat Rescue    1591 Sloat Blvd          San Francisco 94132 
+1003 Town Cats                     195 San Pedro Ave        Morgan Hill   95037 
+1004 Berkeley Humane               2700 Ninth St            Berkeley      94710 
+1005 East Bay SPCA                 8323 Baldwin St          Oakland       94621 
+1006 Peninsula Humane Society      1450 Rollins Rd          Burlingame    94010 
+1007 Humane Society Silicon Valley 901 Ames Ave             Milpitas      95035 
+1008 Marin Humane                  171 Bel Marin Keys Blvd  Novato        94949 
+1009 Hopalong Animal Rescue        945 22nd Ave             Oakland       94606 
+1010 Nine Lives Foundation         3137 Jefferson Ave       Redwood City  94062 
+1011 FieldHaven Feline Center      2754 Ironwood Ln         Lincoln       95648 
+1012 Homeless Cat Network          1040 Park Pl             San Mateo     94403 
+1013 Jakes Place Cat Rescue        1450 Grant Ave           Novato        94945 
+1014 Furry Friends Rescue          45962 Warm Springs Blvd  Fremont       94539 
+1015 Animal Rescue Foundation      2890 Mitchell Dr         Walnut Creek  94598 
+1016 Sequoia Humane Society        6073 Loma Ave            Eureka        95503 
+
+16 rows selected.
+
+===== cat =====
+
+                     Male/                                                      
+ID     Name      Age Female Acquired O Shelter                                  
+------ --------- --- ------ ---------- -------                                  
+01AA01 Bella       2 F      25-FEB-23  1001                                     
+01AA02 Princess    2 F      06-JUN-23  1001                                     
+01AA03 Max         2 M      18-AUG-23  1001                                     
+01AA04 Zeus        1 M      03-FEB-24  1001                                     
+01AA05 Cocoa       1 M      17-MAY-24  1001                                     
+01AA06 Maki        1 M      09-JUN-24  1001                                     
+01AA07 Kiki        1 F      08-NOV-24  1001                                     
+02AA01 Seymour     6 M      23-MAR-23  1002                                     
+02AA02 Callie      3 F      30-MAR-23  1002                                     
+02AA03 Pilot       4 M      04-MAY-23  1002                                     
+02AA04 Jack        2 M      09-JUN-23  1002                                     
+02AA05 Jill        2 F      09-JUN-23  1002                                     
+02AA06 Frank       8 M      23-SEP-23  1002                                     
+02AA07 Leo         6 M      14-MAR-24  1002                                     
+02AA08 Baxter      1 M      07-JUN-24  1002                                     
+02AA09 Momo        1 M      19-AUG-24  1002                                     
+02AA10 Persimmon   2 F      06-SEP-24  1002                                     
+03AA01 Poptart     8 M      09-APR-23  1003                                     
+03AA02 Lucy        7 F      18-OCT-23  1003                                     
+03AA03 Jinx        5 M      04-MAY-24  1003                                     
+03AA04 Sam         2 F      18-JUN-24  1003                                     
+03AA05 Max         7 M      14-AUG-24  1003                                     
+03AA06 Achilles    0 M      30-OCT-24  1003                                     
+04AA01 Pluto       4 M      11-JUL-23  1004                                     
+04AA02 Oliver      1 M      04-NOV-23  1004                                     
+04AA03 Socks       2 F      26-FEB-24  1004                                     
+04AA04 Brie        4 F      20-JUL-24  1004                                     
+05AA01 Milo        9 M      13-JUL-23  1005                                     
+05AA02 Raven       3 F      20-DEC-23  1005                                     
+05AA03 Ellie       1 F      24-APR-24  1005                                     
+06AA01 Tabitha     3 F      14-AUG-23  1006                                     
+07AA01 Oscar       6 M      02-SEP-23  1007                                     
+07AA02 Boxes       1 M      31-JAN-24  1007                                     
+07AA03 Silas       1 M      03-AUG-24  1007                                     
+08AA01 Eggo        7 M      08-SEP-23  1008                                     
+08AA02 Rosie       1 F      28-MAR-24  1008                                     
+09AA01 Mittens     3 F      01-OCT-23  1009                                     
+09AA02 Amira      10 F      30-NOV-23  1009                                     
+10AA01 Pookie      7 M      13-NOV-23  1010                                     
+10AA02 Magic       0 M      01-JUL-24  1010                                     
+10AA03 Mystic      0 F      01-JUL-24  1010                                     
+10AA04 Mana        0 M      01-JUL-24  1010                                     
+11AA01 Khajiit     2 M      11-NOV-23  1011                                     
+11AA02 Talos       6 M      11-NOV-23  1011                                     
+12AA01 Bean        8 M      16-NOV-23  1012                                     
+12AA02 Alexie      1 F      20-MAY-24  1012                                     
+12AA03 Persia      1 F      08-JUL-24  1012                                     
+12AA04 Sophie      2 F      01-DEC-24  1012                                     
+13AA01 Jambon      4 M      01-JAN-24  1013                                     
+14AA01 Loki        5 M      01-MAY-24  1014                                     
+14AA02 Sasha       3 F      17-MAY-24  1014                                     
+15AA01 Mirabell    7 F      02-JUN-24  1015                                     
+15AA02 Peter       2 M      12-AUG-24  1015                                     
+15AA03 Max         1 M      22-AUG-24  1015                                     
+16AA01 Donatello   1 M      13-OCT-24  1016                                     
+16AA02 Katrina     3 F      20-NOV-24  1016                                     
+
+56 rows selected.
+
+===== cat_breed =====
+
+Cat ID Cat Breed                                                                
+------ -------------------                                                      
+01AA01 American Wirehair                                                        
+       California Spangled                                                      
+                                                                                
+01AA02 Maine Coon                                                               
+                                                                                
+01AA03 American Wirehair                                                        
+                                                                                
+01AA04 Manx                                                                     
+       Ragdoll                                                                  
+                                                                                
+01AA05 Abyssinian                                                               
+       Burmilla                                                                 
+                                                                                
+01AA06 Donskoy                                                                  
+                                                                                
+01AA07 Siamese                                                                  
+                                                                                
+02AA01 Aegean                                                                   
+       Russian Blue                                                             
+                                                                                
+02AA02 Scottish Fold                                                            
+                                                                                
+02AA03 Maine Coon                                                               
+       Siberian                                                                 
+                                                                                
+02AA04 American Shorthair                                                       
+       Tonkinese                                                                
+                                                                                
+02AA05 British Shorthair                                                        
+                                                                                
+02AA06 American Longhair                                                        
+       Norwegian Forest                                                         
+                                                                                
+02AA07 Ojos Azules                                                              
+                                                                                
+02AA08 Asian Semi-Longhair                                                      
+                                                                                
+02AA09 Colorpoint Shorthai                                                      
+       r                                                                        
+                                                                                
+       European Shorthair                                                       
+       Manx                                                                     
+                                                                                
+02AA10 Chausie                                                                  
+       Korat                                                                    
+                                                                                
+03AA01 Manx                                                                     
+                                                                                
+03AA02 Ragdoll                                                                  
+                                                                                
+03AA03 British Shorthair                                                        
+       Somali                                                                   
+       Turkish Van                                                              
+                                                                                
+03AA04 Serengeti                                                                
+                                                                                
+03AA05 American Wirehair                                                        
+       Sokoke                                                                   
+                                                                                
+03AA06 Snowshoe                                                                 
+                                                                                
+04AA01 American Curl                                                            
+       Chantilly                                                                
+                                                                                
+04AA02 Turkish Angora                                                           
+                                                                                
+04AA03 Aegean                                                                   
+       American Curl                                                            
+                                                                                
+04AA04 Brazilian Shorthair                                                      
+       Snowshoe                                                                 
+                                                                                
+05AA01  Siberian                                                                
+       British Longhair                                                         
+                                                                                
+05AA02 Asian Semi-Longhair                                                      
+                                                                                
+05AA03 American Bobtail                                                         
+                                                                                
+06AA01 Abyssinian                                                               
+       American Curl                                                            
+       Russian Blue                                                             
+                                                                                
+07AA01 American Bobtail                                                         
+       Maine Coon                                                               
+                                                                                
+07AA02 Korat                                                                    
+                                                                                
+07AA03 Pixie-Bob                                                                
+                                                                                
+08AA01 American Longhair                                                        
+       Bengal                                                                   
+       Sokoke                                                                   
+                                                                                
+08AA02 Maine Coon                                                               
+
+Cat ID Cat Breed                                                                
+------ -------------------                                                      
+                                                                                
+09AA01 Maine Coon                                                               
+       Manx                                                                     
+                                                                                
+09AA02 Tonkinese                                                                
+       Turkish Angora                                                           
+                                                                                
+10AA01 American Wirehair                                                        
+       Norwegian Forest                                                         
+       Serengeti                                                                
+                                                                                
+10AA02 Persian                                                                  
+                                                                                
+10AA03 Persian                                                                  
+                                                                                
+10AA04 Persian                                                                  
+                                                                                
+11AA01 American Shorthair                                                       
+       Pixie-Bob                                                                
+                                                                                
+11AA02 American Bobtail                                                         
+       American Wirehair                                                        
+                                                                                
+12AA01 Munchkin                                                                 
+                                                                                
+12AA02 European Shorthair                                                       
+       Russian Blue                                                             
+                                                                                
+12AA03 Colorpoint Shorthai                                                      
+       r                                                                        
+                                                                                
+                                                                                
+12AA04 American Wirehair                                                        
+       Chausie                                                                  
+                                                                                
+13AA01 Chartreux                                                                
+                                                                                
+14AA01 Donskoy                                                                  
+                                                                                
+14AA02 British Shorthair                                                        
+       Munchkin                                                                 
+                                                                                
+15AA01 European Shorthair                                                       
+                                                                                
+15AA02 Chantilly                                                                
+                                                                                
+15AA03 American Longhair                                                        
+       Manx                                                                     
+                                                                                
+16AA02 Munchkin                                                                 
+       Ragamuffin                                                               
+                                                                                
+
+88 rows selected.
+
+==== cat_caretaker ====
+
+Volunteer ID Cat ID                                                             
+------------ ------                                                             
+V001         01AA02                                                             
+             02AA01                                                             
+             02AA07                                                             
+             03AA01                                                             
+             04AA02                                                             
+             04AA03                                                             
+             07AA03                                                             
+             12AA03                                                             
+             12AA04                                                             
+                                                                                
+V002         01AA03                                                             
+             02AA03                                                             
+             03AA02                                                             
+             03AA06                                                             
+             05AA03                                                             
+             12AA02                                                             
+                                                                                
+V003         02AA02                                                             
+             02AA08                                                             
+             03AA03                                                             
+             04AA01                                                             
+             05AA01                                                             
+             06AA01                                                             
+             07AA02                                                             
+                                                                                
+V004         01AA04                                                             
+             01AA05                                                             
+             07AA01                                                             
+             08AA01                                                             
+             09AA01                                                             
+             10AA02                                                             
+             10AA03                                                             
+             10AA04                                                             
+             15AA02                                                             
+             16AA01                                                             
+                                                                                
+V005         02AA04                                                             
+             02AA05                                                             
+             02AA06                                                             
+             09AA02                                                             
+             10AA01                                                             
+             12AA04                                                             
+                                                                                
+V006         02AA07                                                             
+             02AA09                                                             
+             02AA10                                                             
+             04AA03                                                             
+             05AA02                                                             
+             11AA01                                                             
+                                                                                
+V008         03AA06                                                             
+             08AA02                                                             
+             11AA02                                                             
+             12AA01                                                             
+             15AA03                                                             
+                                                                                
+V009         01AA06                                                             
+             13AA01                                                             
+             14AA01                                                             
+             14AA02                                                             
+             16AA02                                                             
+                                                                                
+V011         03AA05                                                             
+             10AA02                                                             
+             10AA03                                                             
+             10AA04                                                             
+             15AA01                                                             
+                                                                                
+V012         01AA07                                                             
+             03AA04                                                             
+                                                                                
+V013         02AA10                                                             
+             04AA04                                                             
+                                                                                
+V015         05AA03                                                             
+                                                                                
+V017         16AA01                                                             
+                                                                                
+V018         12AA04                                                             
+                                                                                
+
+66 rows selected.
+
+====== volunteer ======
+
+     Last                                     Start     Train     Total         
+ID   Name       Email            Phone        Date      Date        Hrs         
+---- ---------- ---------------- ------------ --------- --------- -----         
+V001 Jillington jack.h.jillingto 000-982-2120 03-FEB-23 10-FEB-23   389         
+                n02@notmail.com                                                 
+                                                                                
+V002 Amari      nano-gir89@fakem 000-982-8787 03-FEB-23 10-FEB-23   364         
+                ail.net                                                         
+                                                                                
+V003 Swan       forks_girl90@not 000-982-7878 05-FEB-23 10-FEB-23   299         
+                arealaddress.com                                                
+                                                                                
+V004 Fyr        fyr.divath@telfy 002-344-7285 16-FEB-23 20-FEB-23   400         
+                r.mw                                                            
+                                                                                
+V005 Ogundimu   akande_doomfist@ 002-223-4356 24-MAR-23 25-MAR-23   202         
+                talon.org                                                       
+                                                                                
+V006 Sakai      jsakai_ghost@feu 001-658-2660 19-JUN-23 23-JUN-23   190         
+                daltsushima.jp                                                  
+                                                                                
+V007 Reyes      gabriel.reyes@fa 020-165-5388 30-JUN-23 01-JUL-23   261         
+                kemail.net                                                      
+                                                                                
+V008 Dufont     alain_the_bandit 003-443-3271 03-AUG-23 08-AUG-23   197         
+                @notmail.com                                                    
+                                                                                
+V009 Vater      ellievater38@not 003-621-5403 07-OCT-23 08-OCT-23    84         
+                arealaddress.com                                                
+                                                                                
+V010 Septim     akatosh_is_king@ 001-192-8631 11-OCT-23 15-OCT-23   100         
+                weynonpriory.cy                                                 
+                                                                                
+V011 John       johnnyjohn@talon 000-111-2222 30-OCT-23 05-NOV-23   203         
+                .org                                                            
+                                                                                
+V012 Koffee     koffeelover83@fa 003-465-5709 10-DEC-23 14-DEC-23   116         
+                kemail.net                                                      
+                                                                                
+V013 Drake      number1treasureh 004-899-2030 17-JAN-24 20-JAN-24    87         
+                unter@fakemail.n                                                
+                et                                                              
+                                                                                
+V014 Peace      pwarr13@fake.edu 000-359-7134 17-JAN-24 20-JAN-24   111         
+V015 Bruce      batmanreal@notma 100-345-9823 11-APR-24 11-APR-24   500         
+                il.com                                                          
+                                                                                
+V016 Song       gamergirl007@not 020-986-1213 01-AUG-24 09-AUG-24    76         
+                arealaddress.com                                                
+                                                                                
+V017 Dogman     katdog101@fakema 100-301-6710 18-SEP-24 28-SEP-24    82         
+                il.com                                                          
+                                                                                
+V018 Garvey     garvey.preston19 020-083-3810 19-NOV-24 26-NOV-24    30         
+                @notmail.com                                                    
+                                                                                
+
+18 rows selected.
+
+======= patron =========
+
+Patron     Last       First         Loyalty                                     
+ID         Name       Name          Memb.                                       
+---------- ---------- ------------- -------                                     
+P001       Finn       Huckleberry   Y                                           
+P002       Gatsby     Jay           N                                           
+P003       Karenina   Anna          Y                                           
+P004       Bennet     Elizabeth     N                                           
+P005       Gray       Dorian        Y                                           
+P006       Quixote    Don           N                                           
+P007       Kynes      Chani         Y                                           
+P008       Belacqua   Lyra          N                                           
+P009       Ariza      Florentino    Y                                           
+P010       Achebe     Okonkwo       N                                           
+P011       Shigekuni  Haruki        Y                                           
+P012       Lannister  Tyrion        N                                           
+P013       Dent       Arthur        Y                                           
+P014       Masur      Sam           N                                           
+P015       Laurence   William       Y                                           
+P016       Raymonde   Kirsten       N                                           
+
+16 rows selected.
+
+===== patron_email_list =====
+
+Patron ID  Email                                                                
+---------- ----------------------------------------                             
+P001       berrysforlife@fakefake.com                                           
+           finhucks@fakefake.com                                                
+P002       bookluver222@notreal.net                                             
+P003       anneKare@fakeaddress.org                                             
+P004       minestrone11@fakemail.net                                            
+P005       picturesarecool@notreal.net                                          
+P006       coolknight@addreessfake.com                                          
+P007       kynes1@fake.edu                                                      
+P008       lyralyra@weynonpriory.cy                                             
+P009       arizabuisness@buinness.org                                           
+P010       broccolisoup@fakefake.com                                            
+P011       hkuni99@fake.edu                                                     
+           strawberrypudding@notreal.net                                        
+P012       catsareverycool@fake.net                                             
+P013       arthurlikeshiking@fakefake.com                                       
+P014       samIam@notarealaddress.org                                           
+           smasur7@fake.edu                                                     
+P015       willlauren@notmail.com                                               
+P016       kirstenr.buisness@buisness.org                                       
+           monde200@fakefake.com                                                
+           raymode1@notmail.com                                                 
+
+21 rows selected.
+
+===== employee =====
+
+     Last       First                                                           
+ID   Name       Name     Email       Phone        Started   Tax ID    Wage      
+---- ---------- -------- ----------- ------------ --------- ------ -------      
+E001 Cosades    Caius    c.cosades87 000-982-5654 03-FEB-23 Y       $30.00      
+                         @fakemail.n                                            
+                         et                                                     
+                                                                                
+E002 Arsgonne   Mike     speed_racer 000-883-9921 03-FEB-23 Y       $29.50      
+                         007@notmail                                            
+                         .com                                                   
+                                                                                
+E003 Ziegler    Angela   aziegler@no 010-065-0332 09-FEB-23 Y       $35.10      
+                         tarealaddre                                            
+                         ss.com                                                 
+                                                                                
+E004 Fiege      Emmerson coolguy@wey 000-606-1444 11-FEB-23 Y       $29.50      
+                         nonpriory.c                                            
+                         y                                                      
+                                                                                
+E005 Basto      Mary     mbast99@fak 002-444-2827 13-MAR-23 N       $30.00      
+                         email.net                                              
+                                                                                
+E006 Lee        Brock    broccoliman 123-456-7890 15-MAR-23 Y       $18.50      
+                         73@notmail.                                            
+                         com                                                    
+                                                                                
+E007 Pines      Stan     stantheman7 987-654-3210 29-MAY-23 Y       $19.25      
+                         3@fakeaddre                                            
+                         ss.com                                                 
+                                                                                
+E008 Porter     Amy      amy123@nota 234-567-8901 13-JUL-23 Y       $18.75      
+                         realaddress                                            
+                         .com                                                   
+                                                                                
+E009 Clearwater Crystal  lil_princes 567-890-1234 01-OCT-23 Y       $19.80      
+                         s33@notmail                                            
+                         .com                                                   
+                                                                                
+E010 Grimes     Rick     rick.g@fake 890-123-4567 15-FEB-24 Y       $18.60      
+                         address.com                                            
+                                                                                
+E011 Banner     Bruce    b.banner123 123-789-0456 07-JUN-24 Y       $19.50      
+                         @notarealad                                            
+                         dress.com                                              
+                                                                                
+E012 Monella    Sal      s.monella@q 456-789-0123 27-NOV-24 Y       $18.90      
+                         uack.edu                                               
+                                                                                
+E013 Annette    Clair    anne76@notm 001-332-7869 22-SEP-24 Y       $18.00      
+                         ail.com                                                
+                                                                                
+E014 Henderson  Ray      rayman99@fa 004-434-5521 23-OCT-24 N       $16.00      
+                         keaddress.c                                            
+                         om                                                     
+                                                                                
+E015 Oba        Yozo     oba.y1930@n 010-543-8943 27-NOV-24 N       $16.00      
+                         otarealaddr                                            
+                         ess.com                                                
+                                                                                
+
+15 rows selected.
+
+===== supervises =====
+
+Supervisor ID Volunteer ID                                                      
+------------- -------------                                                     
+E001          V001                                                              
+              V002                                                              
+              V003                                                              
+              V004                                                              
+              V005                                                              
+              V017                                                              
+                                                                                
+E002          V006                                                              
+              V007                                                              
+              V008                                                              
+              V016                                                              
+              V018                                                              
+                                                                                
+E003          V009                                                              
+              V010                                                              
+              V011                                                              
+              V012                                                              
+              V013                                                              
+              V014                                                              
+              V015                                                              
+                                                                                
+E004          V006                                                              
+              V007                                                              
+              V008                                                              
+              V009                                                              
+                                                                                
+E005          V010                                                              
+              V011                                                              
+              V012                                                              
+              V013                                                              
+              V014                                                              
+                                                                                
+E006          V014                                                              
+              V015                                                              
+                                                                                
+
+29 rows selected.
+
+===== adoption =====
+
+Adoption ID   Adopted On   Cat      Authorized By Adopted By                    
+------------- ------------ -------- ------------- -----------                   
+1001-01AA01   15-MAR-23    01AA01   E001          P001                          
+1002-02AA01   10-APR-23    02AA01   E004          P004                          
+1002-02AA02   02-APR-23    02AA02   E005          P002                          
+1003-03AA02   22-DEC-23    03AA02   E005          P014                          
+1003-03AA03   23-MAY-24    03AA03   E007          P008                          
+1005-05AA01   09-AUG-23    05AA01   E007          P001                          
+1008-08AA01   11-OCT-23    08AA01   E007          P010                          
+1009-09AA01   11-OCT-23    09AA01   E007          P010                          
+1009-09AA02   22-DEC-23    09AA02   E003          P015                          
+1010-10AA01   29-DEC-23    10AA01   E003          P006                          
+1011-11AA01   03-JAN-24    11AA01   E005          P012                          
+1012-12AA01   27-NOV-23    12AA01   E005          P006                          
+1012-12AA03   12-JUL-24    12AA03   E005          P014                          
+1014-14AA01   14-MAY-24    14AA01   E002          P003                          
+1014-14AA02   31-MAY-24    14AA02   E003          P006                          
+1015-15AA01   01-JUL-24    15AA01   E003          P006                          
+
+16 rows selected.
+
+===== purchase =====
+
+Purchase ID   Total Purchased On                             Clerk ID Patron ID 
+----------- ------- ---------------------------------------- -------- --------- 
+P000000001    $7.00 SUN-NOV-24 01:06:25 PM                   E006     P001      
+                                                                                
+                                                                                
+P000000002    $4.99 FRI-NOV-24 12:45:00 PM                   E002     P002      
+                                                                                
+                                                                                
+P000000003    $6.99 TUE-NOV-24 03:17:49 PM                   E009     P003      
+                                                                                
+                                                                                
+P000000004    $5.74 WED-NOV-24 06:00:41 PM                   E006     P004      
+                                                                                
+                                                                                
+P000000005    $9.24 SUN-NOV-24 02:16:41 PM                   E002     P005      
+                                                                                
+                                                                                
+P000000006    $7.49 THU-NOV-24 02:58:21 PM                   E009     P006      
+                                                                                
+                                                                                
+P000000007    $9.79 MON-NOV-24 12:33:53 PM                   E006     P007      
+                                                                                
+                                                                                
+P000000008    $3.50 MON-NOV-24 06:00:31 PM                   E002     P008      
+                                                                                
+                                                                                
+P000000009   $10.50 MON-NOV-24 05:44:16 PM                   E009     P009      
+                                                                                
+                                                                                
+P000000010    $8.00 WED-NOV-24 03:03:48 PM                   E006     P010      
+                                                                                
+                                                                                
+P000000011    $9.74 THU-NOV-24 02:04:04 PM                   E002     P011      
+                                                                                
+                                                                                
+P000000012    $8.29 TUE-NOV-24 05:00:04 PM                   E009     P012      
+                                                                                
+                                                                                
+P000000013   $15.98 SUN-NOV-24 02:35:22 PM                   E006     P013      
+                                                                                
+                                                                                
+P000000014   $11.29 THU-NOV-24 10:53:37 AM                   E002     P014      
+                                                                                
+                                                                                
+P000000015   $13.99 TUE-NOV-24 10:06:09 AM                   E009     P015      
+                                                                                
+                                                                                
+P000000016   $11.99 SAT-NOV-24 05:35:00 PM                   E006     P016      
+                                                                                
+                                                                                
+P000000017    $8.80 SAT-NOV-24 04:03:35 PM                   E002     P005      
+                                                                                
+                                                                                
+P000000018   $10.75 SAT-NOV-24 05:40:00 PM                   E009     P001      
+                                                                                
+                                                                                
+P000000019   $15.99 WED-NOV-24 01:02:44 PM                   E006     P013      
+                                                                                
+                                                                                
+P000000020   $12.99 SUN-NOV-24 02:54:31 PM                   E002     P005      
+                                                                                
+                                                                                
+P000000021    $9.99 MON-NOV-24 12:05:46 PM                   E009     P013      
+                                                                                
+                                                                                
+P000000022   $10.99 FRI-NOV-24 02:08:08 PM                   E006     P003      
+                                                                                
+                                                                                
+P000000023   $14.99 THU-NOV-24 01:43:14 PM                   E002     P001      
+                                                                                
+                                                                                
+P000000024   $13.99 WED-NOV-24 02:50:26 PM                   E009     P005      
+                                                                                
+                                                                                
+P000000025   $16.99 FRI-NOV-24 01:35:27 PM                   E006     P013      
+                                                                                
+                                                                                
+P000000026   $55.96 SAT-NOV-24 05:07:03 PM                   E002     P001      
+                                                                                
+                                                                                
+P000000027   $26.49 SAT-NOV-24 06:00:00 PM                   E009     P002      
+                                                                                
+                                                                                
+P000000028   $17.98 THU-NOV-24 11:38:07 AM                   E006     P013      
+                                                                                
+                                                                                
+
+28 rows selected.
+
+===== purchase_item =====
+
+Item Type Item Code    Base Price                                               
+--------- ------------ ----------                                               
+drink     1111111111        $3.50                                               
+          1111111112        $3.00                                               
+          1111111113        $4.00                                               
+          1111111114        $3.75                                               
+          1111111115        $4.25                                               
+          1111111116        $2.50                                               
+          1111111117        $2.80                                               
+          1111111118        $3.50                                               
+          1111111119        $3.00                                               
+          1111111120        $4.50                                               
+          1111111121        $2.80                                               
+          1111111122        $5.99                                               
+          1111111123        $2.99                                               
+          1111111124        $2.99                                               
+          1111111125        $3.99                                               
+          1111111126        $3.50                                               
+          1111111127        $3.50                                               
+          1111111128        $4.50                                               
+          1111111129        $4.50                                               
+                                                                                
+pastry    3111111111        $4.50                                               
+          3111111112        $3.75                                               
+          3111111113        $3.75                                               
+          3111111114        $4.25                                               
+          3111111115        $3.50                                               
+          3111111116        $1.99                                               
+          3111111117        $2.99                                               
+          3111111118        $1.99                                               
+          3111111119        $4.99                                               
+          3111111120        $4.99                                               
+          3111111121        $6.99                                               
+          3111111122        $3.99                                               
+          3111111123        $1.99                                               
+          3111111124        $1.99                                               
+          3111111125        $1.99                                               
+          3111111126        $1.99                                               
+          3111111127        $1.99                                               
+          3111111128        $1.99                                               
+          3111111129        $5.99                                               
+          3111111130        $5.99                                               
+                                                                                
+book      5111111111       $15.99                                               
+          5111111112       $12.99                                               
+          5111111113        $9.99                                               
+          5111111114       $10.99                                               
+          5111111115       $14.99                                               
+          5111111116       $13.99                                               
+          5111111117       $16.99                                               
+          5111111118       $15.99                                               
+          5111111119       $11.99                                               
+          5111111120       $12.99                                               
+          5111111121       $18.99                                               
+          5111111122       $10.99                                               
+          5111111123       $13.99                                               
+          5111111124       $14.99                                               
+          5111111125       $13.99                                               
+          5111111126       $11.99                                               
+          5111111127        $9.99                                               
+          5111111128       $14.99                                               
+          5111111129       $10.99                                               
+          5111111130        $9.99                                               
+          5111111131       $10.99                                               
+          5111111132       $18.99                                               
+                                                                                
+
+61 rows selected.
+
+===== pastry =====
+
+Item Code    Name            Gluten Nuts Dairy Soy Vegan                        
+------------ --------------- ------ ---- ----- --- -----                        
+3111111111   Chocolate       Y      N    Y     N   N                            
+             Croissant                                                          
+                                                                                
+3111111112   Banana Nut      Y      Y    Y     N   N                            
+             Muffin                                                             
+                                                                                
+3111111113   Blueberry       Y      N    Y     N   N                            
+             Muffin                                                             
+                                                                                
+3111111114   Cinnamon Roll   Y      N    Y     N   N                            
+3111111115   Seasonal Scone  Y      N    Y     N   N                            
+3111111116   Snickerdoodle   Y      N    Y     N   N                            
+             Cookie                                                             
+                                                                                
+3111111117   Brownie         Y      Y    Y     N   N                            
+3111111118   Chocolate Chip  Y      N    Y     N   N                            
+             Cookie                                                             
+                                                                                
+3111111119   Seasonal Danish Y      N    Y     N   N                            
+3111111120   Vegan Lemon     N      N    N     N   Y                            
+             Bars                                                               
+                                                                                
+3111111121   Vegan Flourless N      N    N     N   Y                            
+             Chocolate Tart                                                     
+                                                                                
+3111111122   Vegan Muffins   Y      N    N     N   Y                            
+3111111123   Chocolate Donut Y      N    Y     N   N                            
+3111111124   Maple Bar       Y      N    Y     N   N                            
+3111111125   Powdered Donut  Y      N    Y     N   N                            
+3111111126   Jelly-filled    Y      N    Y     N   N                            
+             Donut                                                              
+                                                                                
+3111111127   Gluten-free     N      N    N     N   Y                            
+             Vegan Donut                                                        
+                                                                                
+3111111128   Fruit-filled    N      N    N     N   Y                            
+             Mochi                                                              
+                                                                                
+3111111129   Peanut Butter   Y      Y    Y     N   N                            
+             and Jelly                                                          
+             Croissant                                                          
+                                                                                
+3111111130   Soy Bacon       Y      N    Y     Y   N                            
+             Parmesan Puffs                                                     
+                                                                                
+
+20 rows selected.
+
+===== drink =====
+
+Item         Drink           Drink Drink            Caffeine Milk         Sugar 
+Code         Name            Temp  Type             Amount   Type         Free  
+------------ --------------- ----- ---------------- -------- ------------ ----- 
+1111111111   Espresso        hot   espresso drink   high                  N     
+1111111112   Americano       hot   coffee           medium                N     
+1111111113   Latte           hot   espresso drink   medium   whole milk   N     
+1111111114   Cappuccino      hot   espresso drink   medium   whole milk   N     
+1111111115   Mocha           hot   espresso drink   high     whole milk   N     
+1111111116   Hot Brewed Tea  hot   tea              medium                Y     
+1111111117   Iced Brewed Tea cold  tea              medium                Y     
+1111111118   Matcha Latte    hot   espresso drink   low      soy milk     N     
+1111111119   Drip Coffee     hot   coffee           medium                N     
+1111111120   Iced Coffee     cold  coffee           high                  N     
+1111111121   Hot Chocolate   hot   other            none     whole milk   N     
+1111111122   Affogato        cold  espresso drink   high     whole milk   N     
+1111111123   Italian Soda    cold  soft drink       none                  N     
+1111111124   Sugar-free      cold  soft drink       none                  Y     
+             Italian Soda                                                       
+                                                                                
+1111111125   Frappuccino     cold  espresso drink   high     whole milk   N     
+1111111126   Yerba Mate      cold  tea              high                  N     
+1111111127   Cold Brew       cold  coffee           extreme               Y     
+1111111128   Energy Drink    cold  other            extreme               N     
+             Infusion                                                           
+                                                                                
+1111111129   Sugar-free      cold  other            extreme               Y     
+             Energy Drink                                                       
+             Infusion                                                           
+                                                                                
+
+19 rows selected.
+
+===== book =====
+
+Item         Book                           Last        First       Total       
+Code         Title                          Name        Name       Copies       
+------------ ------------------------------ ----------- ---------- ------       
+5111111111   Uzumaki                        Ito         Junji           8       
+5111111112   Dune                           Herbert     Frank          10       
+5111111113   Pride and Prejudice            Austen      Jane           15       
+5111111114   1984                           Orwell      George         20       
+5111111115   To Kill a Mockingbird          Lee         Harper         25       
+5111111116   The Song of Achilles           Miller      Madeline       12       
+5111111117   Atomic Habits                  Clear       James          18       
+5111111118   The Subtle Art of Not Giving a Manson      Mark           22       
+             F*ck                                                               
+                                                                                
+5111111119   The Alchemist                  Coelho      Paulo          17       
+5111111120   I Know Why the Caged Bird      Angelou     Maya           10       
+             Sings                                                              
+                                                                                
+5111111121   1Q84                           Murakami    Haruki          8       
+5111111122   The Great Gatsby               Fitzgerald  F. Scott       15       
+5111111123   Oryx and Crake                 Atwood      Margaret       12       
+5111111124   The 5 Love Languages           Chapman     Gary           20       
+5111111125   No Country for Old Men         McCarthy    Cormac         10       
+5111111126   Little Women                   Alcott      Louisa May     18       
+5111111127   The Giver                      Lowry       Lois           16       
+5111111128   The Night Circus               Morgenstern Erin           12       
+5111111129   The Catcher in the Rye         Salinger    J.D.           14       
+5111111130   Fahrenheit 451                 Bradbury    Ray             6       
+5111111131   No Longer Human                Dazai       Osamu           2       
+5111111132   No Longer Human                Ito         Junji           5       
+
+22 rows selected.
+
+===== book_genre =====
+
+Book Code    Book Genre                                                         
+------------ ------------------------------                                     
+5111111111   Graphic_novel                                                      
+             Horror                                                             
+                                                                                
+5111111112   Fiction                                                            
+             Sci_Fi                                                             
+                                                                                
+5111111113   Fiction                                                            
+             Romance                                                            
+                                                                                
+5111111114   Dystopian                                                          
+             Fiction                                                            
+                                                                                
+5111111115   Fiction                                                            
+             Historical_fiction                                                 
+                                                                                
+5111111116   Fiction                                                            
+             Historical_fiction                                                 
+                                                                                
+5111111117   Non-Fiction                                                        
+             Self_help                                                          
+                                                                                
+5111111118   Non-Fiction                                                        
+             Self_help                                                          
+                                                                                
+5111111119   Fantasy                                                            
+             Fiction                                                            
+                                                                                
+5111111120   Biography_Memoir                                                   
+             Non-Fiction                                                        
+                                                                                
+5111111121   Fiction                                                            
+             Sci_Fi                                                             
+                                                                                
+5111111122   Fiction                                                            
+             Romance                                                            
+                                                                                
+5111111123   Dystopian                                                          
+             Fiction                                                            
+                                                                                
+5111111124   Non-Fiction                                                        
+             Self_help                                                          
+                                                                                
+5111111125   Fiction                                                            
+             Thriller                                                           
+                                                                                
+5111111126   Children                                                           
+             Fiction                                                            
+                                                                                
+5111111127   Dystopian                                                          
+             Fiction                                                            
+             YA                                                                 
+                                                                                
+5111111128   Fantasy                                                            
+             Fiction                                                            
+                                                                                
+5111111129   Fiction                                                            
+             YA                                                                 
+                                                                                
+5111111130   Dystopian                                                          
+             Fiction                                                            
+                                                                                
+5111111131   Semi_Autobiographical                                              
+                                                                                
+5111111132   Graphic_novel                                                      
+             Horror                                                             
+             Semi_Autobiographical                                              
+                                                                                
+
+45 rows selected.
+
+===== event =====
+
+                                                      Book Fund-  Cat           
+ID     Name       Start     End         Price Manager Sign raiser Class         
+------ ---------- --------- --------- ------- ------- ---- ------ -----         
+222221 Book       15-JAN-24 15-JAN-24  $15.00 E005    Y    N      N             
+       Signing of                                                               
+       Oryx and                                                                 
+       Crake with                                                               
+       Margaret                                                                 
+       Atwood                                                                   
+                                                                                
+                                                                                
+222222 Book       20-FEB-24 20-FEB-24  $15.00 E006    Y    N      N             
+       Signing of                                                               
+       The 5 Love                                                               
+       Languages                                                                
+       with Gary                                                                
+       Chapman                                                                  
+                                                                                
+                                                                                
+222223 Book       10-MAR-24 10-MAR-24  $15.00 E008    Y    N      N             
+       Signing of                                                               
+       The Night                                                                
+       Circus                                                                   
+       with Erin                                                                
+       Morgenster                                                               
+       n                                                                        
+                                                                                
+                                                                                
+222224 Book       25-APR-24 25-APR-24  $25.00 E013    Y    Y      N             
+       Signing                                                                  
+       Fundraiser                                                               
+       The Subtle                                                               
+       Art of Not                                                               
+       Giving a                                                                 
+       F*ck with                                                                
+       Mark                                                                     
+       Manson                                                                   
+                                                                                
+                                                                                
+222225 Book       12-MAY-24 12-MAY-24  $30.00 E015    Y    Y      N             
+       Signing                                                                  
+       Fundraiser                                                               
+       of No                                                                    
+       Longer                                                                   
+       Human with                                                               
+       Junji Ito                                                                
+                                                                                
+                                                                                
+222226 Leash      02-JUN-24 02-JUN-24  $10.00 E005    N    N      Y             
+       Training                                                                 
+       Your Cat                                                                 
+                                                                                
+                                                                                
+222227 Basic      09-JUN-24 09-JUN-24  $10.00 E006    N    N      Y             
+       Tricks for                                                               
+       Your Cat                                                                 
+                                                                                
+                                                                                
+222228 Basic      16-JUN-24 16-JUN-24  $10.00 E008    N    N      Y             
+       Training                                                                 
+       For Your                                                                 
+       Kitten                                                                   
+                                                                                
+                                                                                
+222229 Leash      23-JUN-24 23-JUN-24  $10.00 E013    N    N      Y             
+       Training                                                                 
+       Your Cat                                                                 
+                                                                                
+                                                                                
+222230 Basic      30-JUN-24 30-JUN-24  $10.00 E015    N    N      Y             
+       Tricks for                                                               
+       Your Cat                                                                 
+                                                                                
+                                                                                
+222231 Meowgical  20-DEC-24 20-DEC-24  $20.00 E005    N    Y      N             
+       Winter                                                                   
+       Fundraiser                                                               
+                                                                                
+                                                                                
+222232 Purrfect   14-FEB-24 14-FEB-24  $25.00 E006    N    Y      N             
+       Valentine                                                                
+       Fundraiser                                                               
+                                                                                
+                                                                                
+222233 Catsgiving 27-NOV-24 27-NOV-24  $30.00 E013    N    Y      N             
+       Gala                                                                     
+                                                                                
+                                                                                
+222234 Shelter    15-JUL-24 15-JUL-24  $20.00 E015    N    Y      N             
+       Support                                                                  
+       Night                                                                    
+                                                                                
+                                                                                
+222235 Adopt-A-Ca 12-AUG-24 12-AUG-24  $25.00 E008    N    Y      N             
+       t                                                                        
+       Fundraiser                                                               
+                                                                                
+
+                                                      Book Fund-  Cat           
+ID     Name       Start     End         Price Manager Sign raiser Class         
+------ ---------- --------- --------- ------- ------- ---- ------ -----         
+                                                                                
+222236 Little     18-AUG-24 18-AUG-24  $15.00 E003    Y    Y      N             
+       Women Read                                                               
+       Along                                                                    
+       Fundraiser                                                               
+                                                                                
+                                                                                
+222237 Giving     30-AUG-24 30-AUG-24  $16.00 E003    Y    Y      N             
+       Felines                                                                  
+       Homes -                                                                  
+       Book                                                                     
+       Fundraiser                                                               
+                                                                                
+                                                                                
+222238 The Great  30-AUG-24 30-AUG-24  $18.00 E003    Y    N      Y             
+       Catsby -                                                                 
+       Socialize                                                                
+       Your Cat!                                                                
+                                                                                
+                                                                                
+222239 To Catch a 01-SEP-24 01-SEP-24  $18.00 E002    Y    Y      Y             
+       Cat - Book                                                               
+       Fundraiser                                                               
+       and Class                                                                
+                                                                                
+                                                                                
+222240 Alchemy    10-SEP-24 10-SEP-24  $11.00 E003    Y    N      Y             
+       and Your                                                                 
+       Cat                                                                      
+                                                                                
+                                                                                
+222241 The Subtle 19-SEP-24 19-SEP-24  $11.00 E003    Y    N      Y             
+       Art of                                                                   
+       Entertaini                                                               
+       ng Your                                                                  
+       Cat                                                                      
+                                                                                
+                                                                                
+222242 Dune       25-SEP-24 25-SEP-24  $20.00 E003    Y    Y      N             
+       Fundraiser                                                               
+       and                                                                      
+       Signing                                                                  
+                                                                                
+                                                                                
+222243 Atomic     26-SEP-24 26-SEP-24  $14.00 E004    Y    N      Y             
+       Habits of                                                                
+       Your Cat                                                                 
+                                                                                
+                                                                                
+222244 Fahren-Cat 30-SEP-24 30-SEP-24  $14.00 E009    Y    Y      Y             
+       -                                                                        
+       Fundraiser                                                               
+       and Cat                                                                  
+       Temperamen                                                               
+       ts                                                                       
+                                                                                
+                                                                                
+222245 The Song   06-OCT-24 06-OCT-24  $25.00 E010    Y    N      Y             
+       of Your                                                                  
+       Cat - What                                                               
+       that Meow                                                                
+       Means                                                                    
+                                                                                
+                                                                                
+222246 Dog        07-OCT-24 07-OCT-24  $15.00 E010    N    Y      Y             
+       Exposure                                                                 
+       for Cats                                                                 
+       and                                                                      
+       Fundraiser                                                               
+                                                                                
+                                                                                
+222247 Raising    11-OCT-24 11-OCT-24  $26.00 E010    N    Y      Y             
+       Kittens                                                                  
+       and                                                                      
+       Adopt-A-Ca                                                               
+       t                                                                        
+       Fundraiser                                                               
+                                                                                
+                                                                                
+222248 Homes for  12-OCT-24 12-OCT-24  $17.00 E010    N    Y      N             
+       Felines                                                                  
+       Fundraiser                                                               
+                                                                                
+                                                                                
+222249 Litter     15-OCT-24 15-OCT-24   $5.00 E010    N    N      Y             
+       Training                                                                 
+       Your Cat                                                                 
+                                                                                
+                                                                                
+
+29 rows selected.
+
+===== book_signing =====
+
+Event ID Book ID                                                                
+-------- ------------                                                           
+222221   5111111123                                                             
+222222   5111111124                                                             
+222223   5111111128                                                             
+222224   5111111118                                                             
+222225   5111111132                                                             
+222236   5111111126                                                             
+222237   5111111127                                                             
+222238   5111111122                                                             
+222239   5111111129                                                             
+222240   5111111119                                                             
+222241   5111111118                                                             
+222242   5111111112                                                             
+222243   5111111117                                                             
+222244   5111111130                                                             
+222245   5111111116                                                             
+
+15 rows selected.
+
+===== fundraiser =====
+
+Event ID    Amt Raised Group Affiliate                                          
+-------- ------------- --------------------                                     
+222224         $825.00 Pages and Paws Cafe                                      
+222225        $2110.00 Pages and Paws Cafe                                      
+222231       $40250.00 Pages and Paws Cafe                                      
+222232         $950.00 Pages and Paws Cafe                                      
+222233       $32308.00 Pages and Paws Cafe                                      
+222234       $25200.00 San Francisco SPCA                                       
+222235         $980.00 Pages and Paws Cafe                                      
+222236        $7003.00 Pages and Paws Cafe                                      
+222237        $2046.00 Pages and Paws Cafe                                      
+222239       $12955.00 San Francisco SPCA                                       
+222242         $900.00 Pages and Paws Cafe                                      
+222244         $655.00 Pages and Paws Cafe                                      
+222246        $1011.00 San Francisco SPCA                                       
+222247         $934.00 San Francisco SPCA                                       
+222248        $3000.00 San Francisco SPCA                                       
+
+15 rows selected.
+
+===== cat_training_class =====
+
+Event ID Last Name  First Name                                                  
+-------- ---------- ---------------                                             
+222226   Patel      Arjun                                                       
+222227   Tran       Amy                                                         
+222228   Brown      Sophia                                                      
+222229   Patel      Arjun                                                       
+222230   Tran       Amy                                                         
+222238   Brown      Sophia                                                      
+222239   Stark      Tony                                                        
+222240   Stark      Tony                                                        
+222241   Stark      Tony                                                        
+222243   Rhee       Glenn                                                       
+222244   Rhee       Glenn                                                       
+222245   Rhee       Glenn                                                       
+222246   Greene     Hershel                                                     
+222247   Greene     Hershel                                                     
+222249   Horvath    Dale                                                        
+
+15 rows selected.
+
+===== purchase_item_quantity =====
+
+Purchase ID  Item Code      Quantity                                            
+------------ ------------ ----------                                            
+P000000001   1111111111            1                                            
+             3111111115            1                                            
+                                                                                
+P000000002   1111111112            1                                            
+             3111111116            1                                            
+                                                                                
+P000000003   1111111113            1                                            
+             3111111117            1                                            
+                                                                                
+P000000004   1111111114            1                                            
+             3111111118            1                                            
+                                                                                
+P000000005   1111111115            1                                            
+             3111111119            1                                            
+                                                                                
+P000000006   1111111116            1                                            
+             3111111120            1                                            
+                                                                                
+P000000007   1111111117            1                                            
+             3111111121            1                                            
+                                                                                
+P000000008   1111111118            1                                            
+                                                                                
+P000000009   1111111111            2                                            
+             3111111115            1                                            
+                                                                                
+P000000010   1111111113            2                                            
+                                                                                
+P000000011   1111111115            1                                            
+             1111111116            1                                            
+             3111111117            1                                            
+                                                                                
+P000000012   1111111117            1                                            
+             1111111118            1                                            
+             3111111118            1                                            
+                                                                                
+P000000013   1111111119            2                                            
+             3111111119            2                                            
+                                                                                
+P000000014   1111111111            1                                            
+             1111111121            1                                            
+             3111111120            1                                            
+                                                                                
+P000000015   1111111112            1                                            
+             1111111113            1                                            
+             3111111121            1                                            
+                                                                                
+P000000016   1111111114            1                                            
+             1111111115            1                                            
+             3111111122            1                                            
+                                                                                
+P000000017   1111111116            1                                            
+             1111111117            1                                            
+             3111111115            1                                            
+                                                                                
+P000000018   1111111118            1                                            
+             1111111119            1                                            
+             3111111114            1                                            
+                                                                                
+P000000019   5111111111            1                                            
+                                                                                
+P000000020   5111111112            1                                            
+                                                                                
+P000000021   5111111113            1                                            
+                                                                                
+P000000022   5111111114            1                                            
+                                                                                
+P000000023   5111111115            1                                            
+                                                                                
+P000000024   5111111116            1                                            
+                                                                                
+P000000025   5111111117            1                                            
+                                                                                
+P000000026   1111111111            1                                            
+             1111111112            1                                            
+             1111111113            1                                            
+             1111111114            1                                            
+             1111111115            1                                            
+             3111111115            1                                            
+             3111111116            1                                            
+             3111111117            1                                            
+             5111111111            1                                            
+             5111111112            1                                            
+                                                                                
+P000000027   1111111111            2                                            
+             3111111115            1                                            
+             5111111111            1                                            
+                                                                                
+P000000028   1111111112            1                                            
+             3111111116            1                                            
+             5111111112            1                                            
+                                                                                
+
+64 rows selected.
+

@@ -1,0 +1,120 @@
+
+Wed Dec 11                                                                       page    1
+                              Report 6: Cat Supervision List
+
+Supervisor              Volunteer               Cat                                       
+----------------------- ----------------------- ------------------                        
+E001 - Cosades, Caius   V001 - Jillington, Jack 01AA02 - Princess                         
+                                                02AA07 - Leo                              
+                                                03AA01 - Poptart                          
+                                                04AA02 - Oliver                           
+                                                04AA03 - Socks                            
+                                                07AA03 - Silas                            
+                                                12AA04 - Sophie                           
+                                                                                          
+                        V002 - Amari, Ana       01AA03 - Max                              
+                                                02AA03 - Pilot                            
+                                                03AA06 - Achilles                         
+                                                05AA03 - Ellie                            
+                                                12AA02 - Alexie                           
+                                                                                          
+                        V003 - Swan, Bella      02AA08 - Baxter                           
+                                                04AA01 - Pluto                            
+                                                06AA01 - Tabitha                          
+                                                07AA02 - Boxes                            
+                                                                                          
+                        V004 - Fyr, Divath      01AA04 - Zeus                             
+                                                01AA05 - Cocoa                            
+                                                07AA01 - Oscar                            
+                                                10AA02 - Magic                            
+                                                10AA03 - Mystic                           
+                                                10AA04 - Mana                             
+                                                15AA02 - Peter                            
+                                                16AA01 - Donatello                        
+                                                                                          
+                        V005 - Ogundimu, Akande 02AA04 - Jack                             
+                                                02AA05 - Jill                             
+                                                02AA06 - Frank                            
+                                                12AA04 - Sophie                           
+                                                                                          
+                        V017 - Dogman, Kat      16AA01 - Donatello                        
+                                                                                          
+E002 - Arsgonne, Mike   V006 - Sakai, Jin       02AA07 - Leo                              
+                                                02AA09 - Momo                             
+                                                02AA10 - Persimmon                        
+                                                04AA03 - Socks                            
+                                                05AA02 - Raven                            
+                                                                                          
+                        V008 - Dufont, Alain    03AA06 - Achilles                         
+                                                08AA02 - Rosie                            
+                                                11AA02 - Talos                            
+                                                15AA03 - Max                              
+                                                                                          
+                        V018 - Garvey, Preston  12AA04 - Sophie                           
+                                                                                          
+E003 - Ziegler, Angela  V009 - Vater, Ellie     01AA06 - Maki                             
+                                                13AA01 - Jambon                           
+                                                16AA02 - Katrina                          
+                                                                                          
+                                  Report Authorized By:
+                                       Cafe Manager
+
+Wed Dec 11                                                                       page    2
+                              Report 6: Cat Supervision List
+
+Supervisor              Volunteer               Cat                                       
+----------------------- ----------------------- ------------------                        
+E003 - Ziegler, Angela  V011 - John, Smith      03AA05 - Max                              
+                                                10AA02 - Magic                            
+                                                10AA03 - Mystic                           
+                                                10AA04 - Mana                             
+                                                                                          
+                        V012 - Koffee, Anita    01AA07 - Kiki                             
+                                                03AA04 - Sam                              
+                                                                                          
+                        V013 - Drake, Nathan    02AA10 - Persimmon                        
+                                                04AA04 - Brie                             
+                                                                                          
+                        V015 - Bruce, Wayne     05AA03 - Ellie                            
+                                                                                          
+E004 - Fiege, Emmerson  V006 - Sakai, Jin       02AA07 - Leo                              
+                                                02AA09 - Momo                             
+                                                02AA10 - Persimmon                        
+                                                04AA03 - Socks                            
+                                                05AA02 - Raven                            
+                                                                                          
+                        V008 - Dufont, Alain    03AA06 - Achilles                         
+                                                08AA02 - Rosie                            
+                                                11AA02 - Talos                            
+                                                15AA03 - Max                              
+                                                                                          
+                        V009 - Vater, Ellie     01AA06 - Maki                             
+                                                13AA01 - Jambon                           
+                                                16AA02 - Katrina                          
+                                                                                          
+E005 - Basto, Mary      V011 - John, Smith      03AA05 - Max                              
+                                                10AA02 - Magic                            
+                                                10AA03 - Mystic                           
+                                                10AA04 - Mana                             
+                                                                                          
+                        V012 - Koffee, Anita    01AA07 - Kiki                             
+                                                03AA04 - Sam                              
+                                                                                          
+                        V013 - Drake, Nathan    02AA10 - Persimmon                        
+                                                04AA04 - Brie                             
+                                                                                          
+E006 - Lee, Brock       V015 - Bruce, Wayne     05AA03 - Ellie                            
+                                                                                          
+
+
+
+
+
+
+
+
+
+
+
+                                  Report Authorized By:
+                                       Cafe Manager

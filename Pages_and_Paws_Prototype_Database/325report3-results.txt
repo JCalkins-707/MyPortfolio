@@ -1,0 +1,84 @@
+Fundraisers have had vastly different
+amounts of funds raised. This report is to
+compare the average amount of funds raised
+based on the duration of the fundraiser,
+the group affiliated, ticket price, and
+whether it coincided with a book signing,
+cat training, both, or stand alone. This is
+to learn about the trends of fundraisers held.
+=========================================
+Avg. Funds Raised Based on Event Duration
+=========================================
+
+Tue Dec 10                                                             page    1
+                             Fundraiser Comparisons
+                     Regarding Different Areas of Interest
+
+Event Duration (Hrs) Avg. Funds Raised Total Events                             
+-------------------- ----------------- ------------                             
+                   4         $14017.00            5                             
+                   5          $7500.50            2                             
+                   3          $7425.40            5                             
+                   6          $7003.00            1                             
+                   8          $1011.00            1                             
+                   2           $900.00            1                             
+
+=========================================
+Fund Statistics Based on Group Affiliated
+=========================================
+
+Group                                                                           
+Affiliated   Avg. Funds Raised Total Events                                     
+------------ ----------------- ------------                                     
+Pages and             $8802.70           10                                     
+Paws Cafe                                                                       
+                                                                                
+San                   $8620.00            5                                     
+Francisco                                                                       
+SPCA                                                                            
+                                                                                
+
+=========================================
+Avg. Funds Raised Based on Ticket Price
+=========================================
+
+Ticket Price Avg. Funds Raised Total Events                                     
+------------ ----------------- ------------                                     
+      $20.00         $22116.67            3                                     
+      $30.00         $17209.00            2                                     
+      $18.00         $12955.00            1                                     
+      $15.00          $4007.00            2                                     
+      $17.00          $3000.00            1                                     
+      $16.00          $2046.00            1                                     
+      $26.00           $934.00            1                                     
+      $25.00           $918.33            3                                     
+      $14.00           $655.00            1                                     
+
+=========================================
+Fund Statistics based on Event Types
+=========================================
+
+Event Type Avg. Funds Raised Total Events                                       
+---------- ----------------- ------------                                       
+Fundraiser         $17114.67            6                                       
+Fundraiser          $6805.00            2                                       
+, Book                                                                          
+Signing                                                                         
+and Cat                                                                         
+Training                                                                        
+Class                                                                           
+                                                                                
+Fundraiser          $2576.80            5                                       
+and Book                                                                        
+Signing                                                                         
+                                                                                
+Fundraiser           $972.50            2                                       
+and Cat                                                                         
+Training                                                                        
+Class                                                                           
+                                                                                
+
+
+
+                              Report Authored By:
+                                  Cafe Manager

@@ -1,0 +1,123 @@
+﻿Kiko Barr
+Julia Calkins
+McKenna Kindle
+
+
+Last modified: December 1, 2024
+
+
+CS 325 - Relational Struct Form
+
+
+===============================
+        Standard Entity Tbls
+===============================            
+Shelter(SHELTER_ID, shelter_name, shelter_street, shelter_city, shelter_zip)
+
+
+Cat(CAT_ID, cat_name, cat_age, cat_sex, date_aquired, shelter_id)
+        foreign key (shelter_id) references Shelter
+
+
+Volunteer(VOL_ID, vol_fname, vol_lname, vol_email, vol_phone,
+              vol_start_date, vol_train_date, hrs_volunteered)
+
+
+Employee(EMPL_ID, empl_lname, empl_fname, empl_email, empl_phone,
+             empl_start_date, empl_tax_id, empl_wage)
+
+
+Patron (PATRON_ID, patron_lname, patron_fname, is_loyalty_member);
+
+
+Adoption(ADOPT_ID, adopt_date, cat_id, authorized_by, adopted_by)
+        foreign key (cat_id) references Cat,
+        foreign key (authorized_by) references Employee(empl_id),
+        foreign key (adopted_by) references Patron(patron_id)
+
+
+
+
+===============================
+        Super & Subclasses
+===============================
+----Event - Overlapping----
+Event(EVENT_ID, event_name, event_start, event_end, ticket_price, manager_id, is_book_signing,
+          is_fundraiser, is_cat_training_class)
+        foreign key (manager_id) references Employee(empl_id)
+
+
+Book_signing(EVENT_ID, book_code)
+        foreign key (event_id) references Event,
+        foreign key (book_code) references Book(item_code)
+
+
+Fundraiser(EVENT_ID, amount_raised, affiliated_group)
+        foreign key (event_id) references Event
+
+
+Cat_training_class(EVENT_ID, instructor_lname, instructor_fname)
+        foreign key (event_id) references Event
+
+
+----Purchase Item - Disjoint----
+Purchase_Item(ITEM_CODE, item_type, item_base_price)
+
+
+Pastry(ITEM_CODE, pastry_name,
+           has_gluten, has_nuts, has_dairy, has_soy, is_vegan)
+        foreign key (item_code) references Purchase_item
+
+
+Drink(ITEM_CODE, drink_name, drink_temp, drink_type, caffeine_content,
+          milk_type, is_sugar_free)
+        foreign key (item_code) references Purchase_item
+
+
+Book(ITEM_CODE, book_title, author_lname, author_fname, copies_in_stock)
+        foreign key (item_code) references Purchase_item
+
+
+
+
+===============================
+        Intersection - Tbls
+===============================
+Cat_caretaker(VOL_ID, CAT_ID)
+        foreign key (vol_id) references Volunteer,
+        foreign key (cat_id) references Cat
+
+
+Supervises(SUPERVISOR, VOL_ID)
+        foreign key (supervisor) references Employee(empl_id),
+        foreign key (vol_id) references Volunteer
+
+
+
+
+==============================
+        Multi-valued Attribute
+==============================
+Book_genre(BOOK_CODE, GENRE)
+        foreign key (book_code) references Purchase_item(item_code)
+
+
+Breed(CAT_ID, CAT_BREED)
+        foreign key (cat_id) references Cat
+
+
+Patron_email_list(PATRON_ID, PATRON_EMAIL)
+        foreign key (patron_id) references Patron
+
+
+===============================
+        Association Entity Tbls
+===============================
+Purchase(PURCHASE_ID, total_cost, purchase_date, clerk_id, patron_id)
+        foreign key (clerk_id) references Employee(empl_id),
+        foreign key (patron_id) references Patron
+
+
+Purchase_item_quantity(PURCHASE_ID, ITEM_CODE, quantity_purchased)
+        foreign key (purchase_id) references Purchase,
+        foreign key (item_code) references Purchase_item

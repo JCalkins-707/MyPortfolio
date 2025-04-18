@@ -1,0 +1,892 @@
+===================================
+~~~Query 1~~~
+Displays the books for sale at the cafe at their
+base price and at a 20% off holiday sale price
+
+Book Title                          Author Name     Normal Price Holiday Sale Price                 
+----------------------------------- --------------- ------------ ------------------                 
+The Giver                           Lowry, L.              $9.99              $7.99                 
+Fahrenheit 451                      Bradbury, R.           $9.99              $7.99                 
+Pride and Prejudice                 Austen, J.             $9.99              $7.99                 
+1984                                Orwell, G.            $10.99              $8.79                 
+No Longer Human                     Dazai, O.             $10.99              $8.79                 
+The Catcher in the Rye              Salinger, J.          $10.99              $8.79                 
+The Great Gatsby                    Fitzgerald, F.        $10.99              $8.79                 
+Little Women                        Alcott, L.            $11.99              $9.59                 
+The Alchemist                       Coelho, P.            $11.99              $9.59                 
+I Know Why the Caged Bird Sings     Angelou, M.           $12.99             $10.39                 
+Dune                                Herbert, F.           $12.99             $10.39                 
+
+Book Title                          Author Name     Normal Price Holiday Sale Price                 
+----------------------------------- --------------- ------------ ------------------                 
+The Song of Achilles                Miller, M.            $13.99             $11.19                 
+No Country for Old Men              McCarthy, C.          $13.99             $11.19                 
+Oryx and Crake                      Atwood, M.            $13.99             $11.19                 
+The Night Circus                    Morgenstern, E.       $14.99             $11.99                 
+To Kill a Mockingbird               Lee, H.               $14.99             $11.99                 
+The 5 Love Languages                Chapman, G.           $14.99             $11.99                 
+Uzumaki                             Ito, J.               $15.99             $12.79                 
+The Subtle Art of Not Giving a F*ck Manson, M.            $15.99             $12.79                 
+Atomic Habits                       Clear, J.             $16.99             $13.59                 
+1Q84                                Murakami, H.          $18.99             $15.19                 
+No Longer Human                     Ito, J.               $18.99             $15.19                 
+
+22 rows selected.
+
+
+======================================
+~~~Query 2~~~
+Displays each book genre, how many books are
+tagged in that genre, and the average book
+price for each genre.
+
+GENRE                          Number of Books Average Price                    
+------------------------------ --------------- -------------                    
+Fiction                                     15        $12.72                    
+Dystopian                                    4        $11.24                    
+Non-Fiction                                  4        $15.24                    
+Self_help                                    3        $15.99                    
+Semi_Autobiographical                        2        $14.99                    
+Sci_Fi                                       2        $15.99                    
+Fantasy                                      2        $13.49                    
+Horror                                       2        $17.49                    
+Historical_fiction                           2        $14.49                    
+Romance                                      2        $10.49                    
+Graphic_novel                                2        $17.49                    
+YA                                           2        $10.49                    
+Biography_Memoir                             1        $12.99                    
+Children                                     1        $11.99                    
+Thriller                                     1        $13.99                    
+
+15 rows selected.
+
+
+==========================================
+~~~Query 3~~~
+Shows the average purchase amount for each
+patron who is a loyalty member and has
+adopted a cat.
+
+PATRON_ID  AVG_PURCHASE                                                         
+---------- ------------                                                         
+P001             $22.18                                                         
+P002             $15.74                                                         
+P015             $13.99                                                         
+P014             $11.29                                                         
+P003              $8.99                                                         
+P012              $8.29                                                         
+P010              $8.00                                                         
+P006              $7.49                                                         
+P004              $5.74                                                         
+P008              $3.50                                                         
+
+10 rows selected.
+
+
+==========================================
+~~~Query 4~~~
+This query returns the first and last names
+and emails of loyalty member patrons. This
+is useful for loyalty member propotional
+email offers and coupons.
+
+Last Name       First Name      Email                                           
+--------------- --------------- ------------------------------                  
+Shigekuni       Haruki          hkuni99@fake.edu                                
+Shigekuni       Haruki          strawberrypudding@notreal.net                   
+Laurence        William         willlauren@notmail.com                          
+Kynes           Chani           kynes1@fake.edu                                 
+Karenina        Anna            anneKare@fakeaddress.org                        
+Gray            Dorian          picturesarecool@notreal.net                     
+Finn            Huckleberry     berrysforlife@fakefake.com                      
+Finn            Huckleberry     finhucks@fakefake.com                           
+Dent            Arthur          arthurlikeshiking@fakefake.com                  
+Ariza           Florentino      arizabuisness@buinness.org                      
+
+10 rows selected.
+
+
+==========================================
+~~~Query 5~~~
+This query prompts the user to enter the name
+of a cat. It will return the associated cat info,
+and adoption info of the cat(s) with that name.
+Enter value for cat_name: Eggo
+old  18: WHERE cat_name = '&Cat_Name'
+new  18: WHERE cat_name = 'Eggo'
+
+CAT_ID Cat Name    Age S Breed             Date Acquired Shelter ID Adopted?                        
+------ ---------- ---- - ----------------- ------------- ---------- --------                        
+08AA01 Eggo        7.0 M American Longhair 08-SEP-23     1008       Y                               
+                         Sokoke                                                                     
+                         Bengal                                                                     
+
+
+=========================================
+~~~Query 6~~~
+This creates a view of the cats at
+the Cafe that have not yet been adopted.
+
+View dropped.
+
+
+View created.
+
+
+CAT_ID CAT_NAME     CAT_AGE S DATE_ACQUIRED SHELTER_ID                          
+------ ------------ ------- - ------------- ----------                          
+10AA04 Mana              .4 M 01-JUL-24     1010                                
+01AA02 Princess         2.0 F 06-JUN-23     1001                                
+04AA02 Oliver           1.0 M 04-NOV-23     1004                                
+02AA07 Leo              6.0 M 14-MAR-24     1002                                
+02AA10 Persimmon        2.0 F 06-SEP-24     1002                                
+01AA04 Zeus             1.0 M 03-FEB-24     1001                                
+03AA04 Sam              2.0 F 18-JUN-24     1003                                
+04AA04 Brie             4.0 F 20-JUL-24     1004                                
+03AA05 Max              7.0 M 14-AUG-24     1003                                
+03AA06 Achilles          .4 M 30-OCT-24     1003                                
+16AA01 Donatello         .9 M 13-OCT-24     1016                                
+
+CAT_ID CAT_NAME     CAT_AGE S DATE_ACQUIRED SHELTER_ID                          
+------ ------------ ------- - ------------- ----------                          
+12AA02 Alexie           1.0 F 20-MAY-24     1012                                
+07AA03 Silas             .8 M 03-AUG-24     1007                                
+04AA03 Socks            2.0 F 26-FEB-24     1004                                
+01AA07 Kiki              .5 F 08-NOV-24     1001                                
+02AA04 Jack             2.0 M 09-JUN-23     1002                                
+02AA05 Jill             2.0 F 09-JUN-23     1002                                
+10AA03 Mystic            .4 F 01-JUL-24     1010                                
+13AA01 Jambon           4.0 M 01-JAN-24     1013                                
+02AA09 Momo             1.0 M 19-AUG-24     1002                                
+04AA01 Pluto            4.0 M 11-JUL-23     1004                                
+07AA02 Boxes            1.0 M 31-JAN-24     1007                                
+
+CAT_ID CAT_NAME     CAT_AGE S DATE_ACQUIRED SHELTER_ID                          
+------ ------------ ------- - ------------- ----------                          
+08AA02 Rosie            1.0 F 28-MAR-24     1008                                
+15AA03 Max               .5 M 22-AUG-24     1015                                
+11AA02 Talos            6.0 M 11-NOV-23     1011                                
+07AA01 Oscar            6.0 M 02-SEP-23     1007                                
+06AA01 Tabitha          3.0 F 14-AUG-23     1006                                
+01AA05 Cocoa             .8 M 17-MAY-24     1001                                
+02AA06 Frank            8.0 M 23-SEP-23     1002                                
+02AA08 Baxter           1.0 M 07-JUN-24     1002                                
+12AA04 Sophie           2.0 F 01-DEC-24     1012                                
+16AA02 Katrina          3.0 F 20-NOV-24     1016                                
+15AA02 Peter            2.0 M 12-AUG-24     1015                                
+
+CAT_ID CAT_NAME     CAT_AGE S DATE_ACQUIRED SHELTER_ID                          
+------ ------------ ------- - ------------- ----------                          
+01AA03 Max              2.0 M 18-AUG-23     1001                                
+01AA06 Maki             1.0 M 09-JUN-24     1001                                
+05AA02 Raven            3.0 F 20-DEC-23     1005                                
+02AA03 Pilot            4.0 M 04-MAY-23     1002                                
+03AA01 Poptart          8.0 M 09-APR-23     1003                                
+05AA03 Ellie            1.0 F 24-APR-24     1005                                
+10AA02 Magic             .4 M 01-JUL-24     1010                                
+
+40 rows selected.
+
+
+========================================
+~~~Query 7~~~
+Shows the average number of cats a volunteer
+looks after based on the area code of
+their phone number.
+
+AREA_CODE    AVG_NUM_CATS                                                       
+------------ ------------                                                       
+002                 8.000                                                       
+000                 5.400                                                       
+003                 4.000                                                       
+001                 3.000                                                       
+004                 2.000                                                       
+100                 1.000                                                       
+020                  .333                                                       
+
+7 rows selected.
+
+
+========================================
+~~~Query 8~~~
+Answers the business question: which pastry
+and drink items were not sold in the
+month of November?
+
+ITEM_CODE    ITEM_NAME                 ITEM_T ITEM_BASE_PRICE                   
+------------ ------------------------- ------ ---------------                   
+1111111120   Iced Coffee               drink            $4.50                   
+1111111129   Sugar-free Energy Drink                    $4.50                   
+             Infusion                                                           
+                                                                                
+1111111128   Energy Drink Infusion                      $4.50                   
+1111111127   Cold Brew                                  $3.50                   
+1111111122   Affogato                                   $5.99                   
+1111111125   Frappuccino                                $3.99                   
+1111111124   Sugar-free Italian Soda                    $2.99                   
+1111111123   Italian Soda                               $2.99                   
+1111111126   Yerba Mate                                 $3.50                   
+                                                                                
+3111111129   Peanut Butter and Jelly   pastry           $5.99                   
+             Croissant                                                          
+                                                                                
+3111111128   Fruit-filled Mochi                         $1.99                   
+3111111127   Gluten-free Vegan Donut                    $1.99                   
+3111111126   Jelly-filled Donut                         $1.99                   
+3111111125   Powdered Donut                             $1.99                   
+3111111124   Maple Bar                                  $1.99                   
+3111111123   Chocolate Donut                            $1.99                   
+3111111113   Blueberry Muffin                           $3.75                   
+3111111112   Banana Nut Muffin                          $3.75                   
+3111111130   Soy Bacon Parmesan Puffs                   $5.99                   
+3111111111   Chocolate Croissant                        $4.50                   
+                                                                                
+
+20 rows selected.
+
+
+========================================
+~~~Query 9~~~
+This query returns the patrons with the
+above average number of purchases.
+
+PATRON_ID  PURCHASE_COUNT                                                       
+---------- --------------                                                       
+P013                    5                                                       
+P005                    4                                                       
+P001                    4                                                       
+P002                    2                                                       
+P003                    2                                                       
+
+
+========================================
+~~~Query 10~~~
+Shows the employees with above average
+wages who are also event managers.
+
+EMPL Last Name       $ Per Hour                                                 
+---- --------------- ----------                                                 
+E002 Arsgonne            $29.50                                                 
+E004 Fiege               $29.50                                                 
+E005 Basto               $30.00                                                 
+E003 Ziegler             $35.10                                                 
+
+
+========================================
+~~~Query 11~~~
+The cafe wants to create an email list for upcoming
+events that includes patrons, volunteers, and
+employees. The results should be distinct.
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+Achebe      Okonkwo     broccolisoup@fakefake.com                               
+                                                                                
+Amari       Ana         nano-gir89@fakemail.net                                 
+                                                                                
+Annette     Clair       anne76@notmail.com                                      
+                                                                                
+Ariza       Florentino  arizabuisness@buinness.org                              
+                                                                                
+Arsgonne    Mike        speed_racer007@notmail.com                              
+                                                                                
+Banner      Bruce       b.banner123@notarealaddress.com                         
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+                                                                                
+Basto       Mary        mbast99@fakemail.net                                    
+                                                                                
+Belacqua    Lyra        lyralyra@weynonpriory.cy                                
+                                                                                
+Bennet      Elizabeth   minestrone11@fakemail.net                               
+                                                                                
+Bruce       Wayne       batmanreal@notmail.com                                  
+                                                                                
+Clearwater  Crystal     lil_princess33@notmail.com                              
+                                                                                
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+Cosades     Caius       c.cosades87@fakemail.net                                
+                                                                                
+Dent        Arthur      arthurlikeshiking@fakefake.com                          
+                                                                                
+Dogman      Kat         katdog101@fakemail.com                                  
+                                                                                
+Drake       Nathan      number1treasurehunter@fakemail.net                      
+                                                                                
+Dufont      Alain       alain_the_bandit@notmail.com                            
+                                                                                
+Fiege       Emmerson    coolguy@weynonpriory.cy                                 
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+                                                                                
+Finn        Huckleberry berrysforlife@fakefake.com                              
+                        finhucks@fakefake.com                                   
+                                                                                
+Fyr         Divath      fyr.divath@telfyr.mw                                    
+                                                                                
+Garvey      Preston     garvey.preston19@notmail.com                            
+                                                                                
+Gatsby      Jay         bookluver222@notreal.net                                
+                                                                                
+Gray        Dorian      picturesarecool@notreal.net                             
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+                                                                                
+Grimes      Rick        rick.g@fakeaddress.com                                  
+                                                                                
+Henderson   Ray         rayman99@fakeaddress.com                                
+                                                                                
+Jillington  Jack        jack.h.jillington02@notmail.com                         
+                                                                                
+John        Smith       johnnyjohn@talon.org                                    
+                                                                                
+Karenina    Anna        anneKare@fakeaddress.org                                
+                                                                                
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+Koffee      Anita       koffeelover83@fakemail.net                              
+                                                                                
+Kynes       Chani       kynes1@fake.edu                                         
+                                                                                
+Lannister   Tyrion      catsareverycool@fake.net                                
+                                                                                
+Laurence    William     willlauren@notmail.com                                  
+                                                                                
+Lee         Brock       broccoliman73@notmail.com                               
+                                                                                
+Masur       Sam         samIam@notarealaddress.org                              
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+Masur       Sam         smasur7@fake.edu                                        
+                                                                                
+Monella     Sal         s.monella@quack.edu                                     
+                                                                                
+Oba         Yozo        oba.y1930@notarealaddress.com                           
+                                                                                
+Ogundimu    Akande      akande_doomfist@talon.org                               
+                                                                                
+Peace       Warren      pwarr13@fake.edu                                        
+                                                                                
+Pines       Stan        stantheman73@fakeaddress.com                            
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+                                                                                
+Porter      Amy         amy123@notarealaddress.com                              
+                                                                                
+Quixote     Don         coolknight@addreessfake.com                             
+                                                                                
+Raymonde    Kirsten     kirstenr.buisness@buisness.org                          
+                        monde200@fakefake.com                                   
+                        raymode1@notmail.com                                    
+                                                                                
+Reyes       Gabriel     gabriel.reyes@fakemail.net                              
+                                                                                
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+Sakai       Jin         jsakai_ghost@feudaltsushima.jp                          
+                                                                                
+Septim      Martin      akatosh_is_king@weynonpriory.cy                         
+                                                                                
+Shigekuni   Haruki      hkuni99@fake.edu                                        
+                        strawberrypudding@notreal.net                           
+                                                                                
+Song        Hana        gamergirl007@notarealaddress.com                        
+                                                                                
+Swan        Bella       forks_girl90@notarealaddress.com                        
+                                                                                
+
+LAST_NAME   FIRST_NAME  EMAIL                                                   
+----------- ----------- -----------------------------------                     
+Vater       Ellie       ellievater38@notarealaddress.com                        
+                                                                                
+Ziegler     Angela      aziegler@notarealaddress.com                            
+                                                                                
+
+54 rows selected.
+
+
+========================================
+~~~Query 12~~~
+A patron said that they recently played with a
+cat that they really liked, but they cannot
+remember its name. They think it ended with
+"Tart". This query searches the
+database for the cat.
+
+CAT_ID Possible Matches                                                         
+------ ----------------                                                         
+03AA01 Poptart                                                                  
+
+
+========================================
+~~~Query 13~~~
+Answers the business question:
+What is the cumulative amount spent by each
+patron on purchases?
+
+PATRON_ID  TOTAL_SPENDING                                                       
+---------- --------------                                                       
+P001               $88.70                                                       
+P013               $76.93                                                       
+P005               $45.02                                                       
+P002               $31.48                                                       
+P003               $17.98                                                       
+P015               $13.99                                                       
+P016               $11.99                                                       
+P014               $11.29                                                       
+P009               $10.50                                                       
+P007                $9.79                                                       
+P011                $9.74                                                       
+
+PATRON_ID  TOTAL_SPENDING                                                       
+---------- --------------                                                       
+P012                $8.29                                                       
+P010                $8.00                                                       
+P006                $7.49                                                       
+P004                $5.74                                                       
+P008                $3.50                                                       
+
+16 rows selected.
+
+
+========================================
+~~~Query 14~~~
+Answers the business question:
+What items were sold most at the cafe?
+Shows top 5 best-selling items.
+
+View dropped.
+
+
+View created.
+
+
+ITEM_CODE    ITEM_NAME                 TOTAL_QUANTITY_PURCHASED                 
+------------ ------------------------- ------------------------                 
+1111111111   Espresso                                         7                 
+1111111113   Latte                                            5                 
+3111111115   Seasonal Scone                                   5                 
+1111111112   Americano                                        4                 
+1111111115   Mocha                                            4                 
+
+
+========================================
+~~~Query 15~~~
+A query that displays the top 3 fundraisers that
+raised the most money, displaying the event name,
+group affiliate, total amount raised, and the last
+name of the employee overseeing it.
+
+Event Name                     Affiliate            Amt Raised Manager L Name   
+------------------------------ -------------------- ---------- ---------------  
+Meowgical Winter Fundraiser    Pages and Paws Cafe     $40,250 Basto            
+Catsgiving Gala                Pages and Paws Cafe     $32,308 Annette          
+Shelter Support Night          San Francisco SPCA      $25,200 Oba              
+
+
+========================================
+~~~Query 16~~~
+The average price of a cat training class based
+on the cat trainer, ordered by most expensive
+ticket price.
+
+Instructor Name                                Average Ticket Price             
+---------------------------------------------- --------------------             
+Dale Horvath                                                  $5.00             
+Arjun Patel                                                  $10.00             
+Amy Tran                                                     $10.00             
+Tony Stark                                                   $13.33             
+Sophia Brown                                                 $14.00             
+Glenn Rhee                                                   $17.67             
+Hershel Greene                                               $20.50             
+
+7 rows selected.
+
+
+========================================
+~~~Query 17~~~
+The number of cats tagged as each breed.
+
+Cat Breed              Num Cats                                                 
+-------------------- ----------                                                 
+American Wirehair             6                                                 
+Maine Coon                    5                                                 
+Manx                          5                                                 
+American Bobtail              3                                                 
+Russian Blue                  3                                                 
+British Shorthair             3                                                 
+Persian                       3                                                 
+American Curl                 3                                                 
+American Longhair             3                                                 
+European Shorthair            3                                                 
+Munchkin                      3                                                 
+Pixie-Bob                     2                                                 
+Norwegian Forest              2                                                 
+Snowshoe                      2                                                 
+Korat                         2                                                 
+Aegean                        2                                                 
+Donskoy                       2                                                 
+Chantilly                     2                                                 
+Sokoke                        2                                                 
+Chausie                       2                                                 
+Ragdoll                       2                                                 
+Turkish Angora                2                                                 
+Colorpoint Shorthair          2                                                 
+American Shorthair            2                                                 
+Abyssinian                    2                                                 
+Asian Semi-Longhair           2                                                 
+Serengeti                     2                                                 
+Tonkinese                     2                                                 
+Brazilian Shorthair           1                                                 
+Turkish Van                   1                                                 
+California Spangled           1                                                 
+Ojos Azules                   1                                                 
+Siberian                      1                                                 
+Somali                        1                                                 
+Scottish Fold                 1                                                 
+British Longhair              1                                                 
+Siamese                       1                                                 
+Ragamuffin                    1                                                 
+ Siberian                     1                                                 
+Burmilla                      1                                                 
+Chartreux                     1                                                 
+Bengal                        1                                                 
+
+42 rows selected.
+
+
+========================================
+~~~Query 18~~~
+See file 325trigger.sql for query 18
+
+========================================
+~~~Query 19~~~
+See file 325trigger.sql for query 19
+
+========================================
+~~~Query 20~~~
+A view that shows the attributes for events with
+more than one subtype.
+For example, if an event is both a cat training
+class and a fundraiser, it would display the
+affiliated groups, trainer last name, and the
+total amount raised. If an event is not of a
+particular subclass, it will display N/A or 0,
+depending on if the columns is a number or string.
+
+View dropped.
+
+
+View created.
+
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+222226 Leash Training  02-JUN-24  N/A                $0 N/A        Arjun      Patel                 
+       Your Cat                                                                                     
+                                                                                                    
+222229 Leash Training  23-JUN-24  N/A                $0 N/A        Arjun      Patel                 
+       Your Cat                                                                                     
+                                                                                                    
+222227 Basic Tricks fo 09-JUN-24  N/A                $0 N/A        Amy        Tran                  
+       r Your Cat                                                                                   
+                                                                                                    
+222230 Basic Tricks fo 30-JUN-24  N/A                $0 N/A        Amy        Tran                  
+       r Your Cat                                                                                   
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+                                                                                                    
+222228 Basic Training  16-JUN-24  N/A                $0 N/A        Sophia     Brown                 
+       For Your Kitten                                                                              
+                                                                                                    
+222238 The Great Catsb 30-AUG-24  5111111122         $0 N/A        Sophia     Brown                 
+       y - Socialize Y                                                                              
+       our Cat!                                                                                     
+                                                                                                    
+222239 To Catch a Cat  01-SEP-24  5111111129    $12,955 San Franci Tony       Stark                 
+       - Book Fundrais                                  sco SPCA                                    
+       er and Class                                                                                 
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+                                                                                                    
+222240 Alchemy and You 10-SEP-24  5111111119         $0 N/A        Tony       Stark                 
+       r Cat                                                                                        
+                                                                                                    
+222241 The Subtle Art  19-SEP-24  5111111118         $0 N/A        Tony       Stark                 
+       of Entertaining                                                                              
+        Your Cat                                                                                    
+                                                                                                    
+222243 Atomic Habits o 26-SEP-24  5111111117         $0 N/A        Glenn      Rhee                  
+       f Your Cat                                                                                   
+                                                                                                    
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+222244 Fahren-Cat - Fu 30-SEP-24  5111111130       $655 Pages and  Glenn      Rhee                  
+       ndraiser and Ca                                  Paws Cafe                                   
+       t Temperaments                                                                               
+                                                                                                    
+222245 The Song of You 06-OCT-24  5111111116         $0 N/A        Glenn      Rhee                  
+       r Cat - What th                                                                              
+       at Meow Means                                                                                
+                                                                                                    
+222246 Dog Exposure fo 07-OCT-24  N/A            $1,011 San Franci Hershel    Greene                
+       r Cats and Fund                                  sco SPCA                                    
+       raiser                                                                                       
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+                                                                                                    
+222247 Raising Kittens 11-OCT-24  N/A              $934 San Franci Hershel    Greene                
+        and Adopt-A-Ca                                  sco SPCA                                    
+       t Fundraiser                                                                                 
+                                                                                                    
+222249 Litter Training 15-OCT-24  N/A                $0 N/A        Dale       Horvath               
+        Your Cat                                                                                    
+                                                                                                    
+222236 Little Women Re 18-AUG-24  5111111126     $7,003 Pages and  N/A        N/A                   
+       ad Along Fundra                                  Paws Cafe                                   
+       iser                                                                                         
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+                                                                                                    
+222222 Book Signing of 20-FEB-24  5111111124         $0 N/A        N/A        N/A                   
+        The 5 Love Lan                                                                              
+       guages with Gar                                                                              
+       y Chapman                                                                                    
+                                                                                                    
+222224 Book Signing Fu 25-APR-24  5111111118       $825 Pages and  N/A        N/A                   
+       ndraiser The Su                                  Paws Cafe                                   
+       btle Art of Not                                                                              
+        Giving a F*ck                                                                               
+       with Mark Manso                                                                              
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+       n                                                                                            
+                                                                                                    
+222233 Catsgiving Gala 27-NOV-24  N/A           $32,308 Pages and  N/A        N/A                   
+                                                        Paws Cafe                                   
+                                                                                                    
+222231 Meowgical Winte 20-DEC-24  N/A           $40,250 Pages and  N/A        N/A                   
+       r Fundraiser                                     Paws Cafe                                   
+                                                                                                    
+222248 Homes for Felin 12-OCT-24  N/A            $3,000 San Franci N/A        N/A                   
+       es Fundraiser                                    sco SPCA                                    
+                                                                                                    
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+222235 Adopt-A-Cat Fun 12-AUG-24  N/A              $980 Pages and  N/A        N/A                   
+       draiser                                          Paws Cafe                                   
+                                                                                                    
+222234 Shelter Support 15-JUL-24  N/A           $25,200 San Franci N/A        N/A                   
+        Night                                           sco SPCA                                    
+                                                                                                    
+222221 Book Signing of 15-JAN-24  5111111123         $0 N/A        N/A        N/A                   
+        Oryx and Crake                                                                              
+        with Margaret                                                                               
+       Atwood                                                                                       
+                                                                                                    
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+222225 Book Signing Fu 12-MAY-24  5111111132     $2,110 Pages and  N/A        N/A                   
+       ndraiser of No                                   Paws Cafe                                   
+       Longer Human wi                                                                              
+       th Junji Ito                                                                                 
+                                                                                                    
+222232 Purrfect Valent 14-FEB-24  N/A              $950 Pages and  N/A        N/A                   
+       ine Fundraiser                                   Paws Cafe                                   
+                                                                                                    
+222237 Giving Felines  30-AUG-24  5111111127     $2,046 Pages and  N/A        N/A                   
+       Homes - Book Fu                                  Paws Cafe                                   
+       ndraiser                                                                                     
+
+EVENT_ Event Name      Event Date Book ID    Amt Raised Affiliate  Inst. F Na Inst. L Name          
+------ --------------- ---------- ---------- ---------- ---------- ---------- ---------------       
+                                                                                                    
+222242 Dune Fundraiser 25-SEP-24  5111111112       $900 Pages and  N/A        N/A                   
+        and Signing                                     Paws Cafe                                   
+                                                                                                    
+222223 Book Signing of 10-MAR-24  5111111128         $0 N/A        N/A        N/A                   
+        The Night Circ                                                                              
+       us with Erin Mo                                                                              
+       rgenstern                                                                                    
+                                                                                                    
+
+29 rows selected.
+
+
+========================================
+~~~Query 21~~~
+A query to list the events that an employee
+has managed. It will display the employee
+name, the event date, and the event_id
+
+Employee Name        Event ID Event Date                                        
+-------------------- -------- ----------                                        
+Mary Basto           222221   15-JAN-24                                         
+                                                                                
+Brock Lee            222222   20-FEB-24                                         
+                                                                                
+Amy Porter           222223   10-MAR-24                                         
+                                                                                
+Clair Annette        222224   25-APR-24                                         
+                                                                                
+Yozo Oba             222225   12-MAY-24                                         
+                                                                                
+Mary Basto           222226   02-JUN-24                                         
+
+Employee Name        Event ID Event Date                                        
+-------------------- -------- ----------                                        
+                                                                                
+Brock Lee            222227   09-JUN-24                                         
+                                                                                
+Amy Porter           222228   16-JUN-24                                         
+                                                                                
+Clair Annette        222229   23-JUN-24                                         
+                                                                                
+Yozo Oba             222230   30-JUN-24                                         
+                                                                                
+Mary Basto           222231   20-DEC-24                                         
+                                                                                
+
+Employee Name        Event ID Event Date                                        
+-------------------- -------- ----------                                        
+Brock Lee            222232   14-FEB-24                                         
+                                                                                
+Clair Annette        222233   27-NOV-24                                         
+                                                                                
+Yozo Oba             222234   15-JUL-24                                         
+                                                                                
+Amy Porter           222235   12-AUG-24                                         
+                                                                                
+Angela Ziegler       222236   18-AUG-24                                         
+                     222237   30-AUG-24                                         
+                     222238   30-AUG-24                                         
+
+Employee Name        Event ID Event Date                                        
+-------------------- -------- ----------                                        
+                                                                                
+Mike Arsgonne        222239   01-SEP-24                                         
+                                                                                
+Angela Ziegler       222240   10-SEP-24                                         
+                     222241   19-SEP-24                                         
+                     222242   25-SEP-24                                         
+                                                                                
+Emmerson Fiege       222243   26-SEP-24                                         
+                                                                                
+Crystal Clearwater   222244   30-SEP-24                                         
+                                                                                
+
+Employee Name        Event ID Event Date                                        
+-------------------- -------- ----------                                        
+Rick Grimes          222245   06-OCT-24                                         
+                     222246   07-OCT-24                                         
+                     222247   11-OCT-24                                         
+                     222248   12-OCT-24                                         
+                     222249   15-OCT-24                                         
+                                                                                
+
+29 rows selected.
+
+
+========================================
+~~~Query 22~~~
+Suppose we want to find the employees that
+supervised specific volunteers. This query
+will display the employee name, start date,
+and wage for every employee that supervises.
+This query will allow us to input an employee
+ID and return the corresponding supervisor(s).
+Enter value for vol_input: V001
+old   7: 			AND vol_id = '&vol_input')
+new   7: 			AND vol_id = 'V001')
+
+Supervisor           Hire Date  $ Per Hour                                      
+-------------------- ---------- ----------                                      
+Caius Cosades        03-FEB-23      $30.00                                      
+
+
+========================================
+~~~Query 23~~~
+A query that shows the book price, number
+of copies, the event name, and event start
+date for a book signing event, ordered by
+the start date in descending order for
+events between August 12 and September 30
+2024.
+
+Event Name                                 Event Date Book Price Copies         
+------------------------------------------ ---------- ---------- ------         
+Atomic Habits of Your Cat                  26-SEP-24      $16.99     18         
+Dune Fundraiser and Signing                25-SEP-24      $12.99     10         
+The Subtle Art of Entertaining Your Cat    19-SEP-24      $15.99     22         
+Alchemy and Your Cat                       10-SEP-24      $11.99     17         
+To Catch a Cat - Book Fundraiser and Class 01-SEP-24      $10.99     14         
+The Great Catsby - Socialize Your Cat!     30-AUG-24      $10.99     15         
+Giving Felines Homes - Book Fundraiser     30-AUG-24       $9.99     16         
+
+7 rows selected.
+
+
+========================================
+~~~Query 24~~~
+A query that finds the lowest wage of an
+employee out of employees that were hired
+for that month.
+
+Month Hired Lowest Wage                                                         
+----------- -----------                                                         
+02-2023          $29.50                                                         
+02-2024          $18.60                                                         
+03-2023          $18.50                                                         
+05-2023          $19.25                                                         
+06-2024          $19.50                                                         
+07-2023          $18.75                                                         
+09-2024          $18.00                                                         
+10-2023          $19.80                                                         
+10-2024          $16.00                                                         
+11-2024          $16.00                                                         
+
+10 rows selected.
+
+
+========================================
+~~~Query 25~~~
+For training purposes, a new barista needs
+to know what they can serve to
+a patron who cannot have gluten
+
+ITEM_CODE    PASTRY_NAME                              ITEM_BASE_PRICE           
+------------ ---------------------------------------- ---------------           
+3111111120   Vegan Lemon Bars                                    4.99           
+3111111121   Vegan Flourless Chocolate Tart                      6.99           
+3111111127   Gluten-free Vegan Donut                             1.99           
+3111111128   Fruit-filled Mochi                                  1.99           
+
+
+========================================
+~~~Query 26~~~
+Shows the average total sales of each employee
+who has been a clerk.
+
+CLER Sales Average                                                              
+---- -------------                                                              
+E006        $12.05                                                              
+E009        $12.05                                                              
+E002        $14.61                                                              
+

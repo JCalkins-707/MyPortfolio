@@ -1,0 +1,77 @@
+=================================
+~~~Query 18~~~
+
+When a book is purchased, the trigger reduces copies_in_stock
+for the book by the quantity  purchased. The trigger does this
+by seeing if a book (which always has an item code between
+'5111111111' and '7999999999') was purchased.
+
+Trigger created.
+
+=================================
+~~~Query 19~~~
+If the inventory for books is 5 or below, this trigger will automatically
+add the book to a table which keeps track of books to order.
+
+Table dropped.
+
+
+Table created.
+
+
+Trigger created.
+
+=================================
+~~~Testing Triggers~~~
+Check the list books_to_order.
+
+no rows selected
+
+Copies of 5111111130 aka Fahrenheit 451 in stock BEFORE purchase/trigger:
+
+ITEM_CODE    COPIES_IN_STOCK                                                    
+------------ ---------------                                                    
+5111111130                 6                                                    
+
+Someone purchases 1 copy of Fahrenheit 451.
+
+1 row created.
+
+
+1 row created.
+
+Copies of 5111111130 aka Fahrenheit 451 in stock AFTER purchase/trigger:
+
+ITEM_CODE    COPIES_IN_STOCK                                                    
+------------ ---------------                                                    
+5111111130                 5                                                    
+
+Copies of 5111111127 aka The Giver in stock BEFORE purchase/trigger:
+
+ITEM_CODE    COPIES_IN_STOCK                                                    
+------------ ---------------                                                    
+5111111127                16                                                    
+
+Someone buys 12 copies of The Giver.
+
+1 row created.
+
+
+1 row created.
+
+Copies of 5111111127 aka The Giver in stock AFTER purchase/trigger:
+
+ITEM_CODE    COPIES_IN_STOCK                                                    
+------------ ---------------                                                    
+5111111127                 4                                                    
+
+
+Since both purchases reduced the total copies in stock to at or
+below 5, they should have activated the other trigger to add them
+to the trigger log called books_to_order
+
+  ORDER_ID BOOK_ID      COPIES_IN_STOCK ALERT_DAT                               
+---------- ------------ --------------- ---------                               
+         1 5111111130                 5 10-DEC-24                               
+         2 5111111127                 4 10-DEC-24                               
+

@@ -1,0 +1,100 @@
+
+The purpose of this report is to analyze the spending
+habits of patrons who are Loyalty Members. Loyalty
+Members bring in the most revenue throughout the year
+so insights from this report can be used to make decisions
+about what new products we can offer at the cafe that will
+be most impactful.
+
+
+Tue Dec 10                                                             page    1
+                            Spending Habits of Cafe
+                                Loyalty Members
+
+PATRON_ID  Item                                                                 
+---------- -------------------------                                            
+P001       Americano                                                            
+           Brownie                                                              
+           Cappuccino                                                           
+           Cinnamon Roll                                                        
+           Drip Coffee                                                          
+           Dune                                                                 
+           Espresso                                                             
+           Latte                                                                
+           Matcha Latte                                                         
+           Mocha                                                                
+           Seasonal Scone                                                       
+           Snickerdoodle Cookie                                                 
+           To Kill a Mockingbird                                                
+           Uzumaki                                                              
+                                                                                
+P003       1984                                                                 
+           Brownie                                                              
+           Latte                                                                
+                                                                                
+P005       Dune                                                                 
+           Hot Brewed Tea                                                       
+           Iced Brewed Tea                                                      
+           Mocha                                                                
+           Seasonal Danish                                                      
+           Seasonal Scone                                                       
+           The Song of Achilles                                                 
+                                                                                
+P007       Iced Brewed Tea                                                      
+           Vegan Flourless Chocolate                                            
+           Tart                                                                 
+                                                                                
+                                                                                
+P009       Espresso                                                             
+           Seasonal Scone                                                       
+                                                                                
+P011       Brownie                                                              
+           Hot Brewed Tea                                                       
+           Mocha                                                                
+                                                                                
+P013       Americano                                                            
+           Atomic Habits                                                        
+           Drip Coffee                                                          
+           Dune                                                                 
+           Pride and Prejudice                                                  
+           Seasonal Danish                                                      
+           Snickerdoodle Cookie                                                 
+           Uzumaki                                                              
+                                                                                
+P015       Americano                                                            
+           Latte                                                                
+           Vegan Flourless Chocolate                                            
+           Tart                                                                 
+                                                                                
+                                                                                
+===========================================================
+What are the top five items purchased by loyalty members?
+===========================================================
+
+Item                      TOTAL_QUANTITY_PURCHASED                              
+------------------------- ------------------------                              
+Espresso                                         4                              
+Seasonal Scone                                   4                              
+Americano                                        3                              
+Latte                                            3                              
+Mocha                                            3                              
+
+
+===========================================================
+Are loyalty members more likely to adopt a cat
+than non-loyalty members?
+===========================================================
+
+Is Loyalty Member Number of Adoptions                                           
+----------------- -------------------                                           
+N                                  11                                           
+Y                                   4                                           
+
+
+
+
+
+
+
+                              Report Authored By:
+                                  Cafe Manager

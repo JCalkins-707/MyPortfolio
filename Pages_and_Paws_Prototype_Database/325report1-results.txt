@@ -1,0 +1,106 @@
+A single month of sales statistics broken
+out by each week. Analyses include the number
+of sales, average amount of each transaction,
+and the total revenue for each week.
+Also gives an overview of the items purchased
+divided out by each week.
+SP2-0042: unknown command "TITLE OFF" - rest of line ignored.
+
+
+Mon Dec 09                                                             page    1
+                              Sales Statistics for
+                             November 2024 by Week
+
+WEEK   Avg. Purchase # of Sales Week Total                                      
+------ ------------- ---------- ----------                                      
+Week 1        $10.22          8     $81.78                                      
+Week 2        $10.18          7     $71.25                                      
+Week 3        $11.78          7     $82.49                                      
+Week 4        $20.82          6    $124.91                                      
+
+
+=========================================
+Week 1 Purchases Ranked by Most Purchased
+=========================================
+
+Item                      # Purchased                                           
+------------------------- -----------                                           
+Espresso                            3                                           
+Chocolate Chip Cookie               2                                           
+Iced Brewed Tea                     2                                           
+Cappuccino                          2                                           
+Seasonal Scone                      2                                           
+Vegan Muffins                       1                                           
+Vegan Lemon Bars                    1                                           
+Uzumaki                             1                                           
+Matcha Latte                        1                                           
+Hot Brewed Tea                      1                                           
+Mocha                               1                                           
+Vegan Flourless Chocolate           1                                           
+Tart                                                                            
+                                                                                
+Americano                           1                                           
+Snickerdoodle Cookie                1                                           
+
+=========================================
+Week 2 Purchases Ranked by Most Purchased
+=========================================
+
+Item                      # Purchased                                           
+------------------------- -----------                                           
+Latte                               3                                           
+Mocha                               2                                           
+Seasonal Scone                      2                                           
+Brownie                             2                                           
+Hot Brewed Tea                      2                                           
+Espresso                            2                                           
+Seasonal Danish                     1                                           
+Iced Brewed Tea                     1                                           
+Dune                                1                                           
+Americano                           1                                           
+Snickerdoodle Cookie                1                                           
+
+=========================================
+Week 3 Purchases Ranked by Most Purchased
+=========================================
+
+Item                      # Purchased                                           
+------------------------- -----------                                           
+Drip Coffee                         3                                           
+Matcha Latte                        2                                           
+Seasonal Danish                     2                                           
+Americano                           1                                           
+Vegan Flourless Chocolate           1                                           
+Tart                                                                            
+                                                                                
+Espresso                            1                                           
+Cinnamon Roll                       1                                           
+Hot Chocolate                       1                                           
+Uzumaki                             1                                           
+Latte                               1                                           
+1984                                1                                           
+Vegan Lemon Bars                    1                                           
+
+=========================================
+Week 4 Purchases Ranked by Most Purchased
+=========================================
+
+Item                      # Purchased                                           
+------------------------- -----------                                           
+Dune                                2                                           
+The Song of Achilles                1                                           
+Americano                           1                                           
+Atomic Habits                       1                                           
+Mocha                               1                                           
+Pride and Prejudice                 1                                           
+Brownie                             1                                           
+To Kill a Mockingbird               1                                           
+Uzumaki                             1                                           
+Latte                               1                                           
+Cappuccino                          1                                           
+Espresso                            1                                           
+Seasonal Scone                      1                                           
+Snickerdoodle Cookie                1                                           
+
+                              Report Authored By:
+                                  Cafe Manager

@@ -1,0 +1,27 @@
+
+Statistics of All Cats Cared for by the Cafe:
+For Average Gender, a value closer to 1
+indicates a higher average of male cats.
+
+Wed Dec 11                                                             page    1
+                                Adoption Report:
+                    Statistics of Adopted and Unadopted Cats
+
+Total Cats Average Age Oldest Cat Youngest Cat Average Gender                   
+---------- ----------- ---------- ------------ --------------                   
+        56        3.26         10           .4            .59                   
+
+Statistics of Unadopted Cats:
+
+Unadopted Cats Average Age Oldest Cat Youngest Cat Average Gender               
+-------------- ----------- ---------- ------------ --------------               
+            40        2.45          8           .4            .63               
+
+Statistics of Adopted Cats:
+
+Adopted Cats Average Age Oldest Cat Youngest Cat Average Gender                 
+------------ ----------- ---------- ------------ --------------                 
+          16        5.29         10           .7            .50                 
+
+                             Report Authorized By:
+                                  Cafe Manager

@@ -1,0 +1,52 @@
+//   Julia Calkins
+//   CS 328 - My Database Relation-Struct Form
+//   Last modified: 24-Feb-2025
+
+  Room(ROOM_NUM, room_type, view) 
+
+  Guest(GUEST_NUM, guest_lname, guest_fname, guest_address,
+        guest_city, guest_zip, guest_country)
+        
+  Guest_Phone_Num(GUEST_NUM, GUEST_PHONE)
+       foreign key (guest_num) references Guest
+
+  Guest_Email_Addr(GUEST_NUM, GUEST_EMAIL)
+       foreign key (guest_num) references Guest
+
+  Reservation(CONF_NUM, check_in_date, check_out_date, total_cost,
+              res_status, guest_num, room_num, occupants)
+       foreign key (guest_num) references Guest
+       foreign key (room_num) references Room
+
+  Transaction(TRANS_NUM, conf_num, trans_date, trans_amt,
+              trans_method)
+       foreign key (conf_num) references Reservation
+
+  Employee(EMPL_NUM, empl_lname, empl_fname, role,
+	   wage, hire_date, shift, is_mgr)
+
+  Employee_Phone_Num(EMPL_NUM, EMPL_PHONE)
+
+  Empl_res(EMPL_NUM, CONF_NUM)
+       foreign key(empl_num) references empl
+       foreign key(conf_num) references reservation
+
+  Empl_task(EMPL_NUM, TASK_NUM)
+       foreign key(empl_num) references empl
+       foreign key(task_num) references task
+
+  Task(TASK_NUM, date_started, date_complete, task_type)
+
+  Room_Service(SERVICE_NUM, room_num, is_refused)
+      foreign key(service_num) references Task(task_num)
+      foreign key(room_num) references Room
+
+  Work_Order(WORK_NUM, room_num, issue, outsource)
+      foreign key(work_num) references Task(task_num)
+      foreign key(room_num) references Room
+
+  Care(CARE_NUM, wf_num, care_specifics)
+      foreign key(care_num) references Task(task_num)
+      foreign key(wf_num) references Waterfowl
+
+  Waterfowl(WF_NUM, wf_name, wf_species, wf_breed, wf_age)

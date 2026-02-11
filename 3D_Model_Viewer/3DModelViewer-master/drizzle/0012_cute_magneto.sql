@@ -1,0 +1,1 @@
+ALTER TABLE `tag` ADD `is_hidden` integer DEFAULT 0;

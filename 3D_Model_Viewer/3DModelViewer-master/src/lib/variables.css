@@ -1,0 +1,24 @@
+/*
+	Theme colors:
+	* black - #131515
+	* dark - #4B3832
+	* accent-dark - #4B3832
+	* accent-dull - #854442
+	* accent-light - #FFF4E6
+	* primary - #BE9B7B
+	* primary-light - #EED9B5
+	* white - #FFFAFB
+*/
+
+:root {
+    --black: #131515;;
+    --dark: #4B3832;
+    --accent-dark: #4B3832;
+	--accent-dull: #854442;
+	--accent-light: #FFF4E6;
+    --primary: #BE9B7B;
+	--primary-light: #EED9B5;
+    --white: #FFFAFB;
+	--approved-green: #00ff4c;
+	--unapproved-red: #ff1b1b;
+}
